@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppModule>
+  <UniqueName>hsa_NonClinicalRounding</UniqueName>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <WebResourceId>953b9fac-1e5e-e611-80d6-00155ded156f</WebResourceId>
+  <OptimizedFor></OptimizedFor>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <FormFactor>1</FormFactor>
+  <ClientType>4</ClientType>
+  <NavigationType>0</NavigationType>
+  <AppModuleComponents>
+    <AppModuleComponent type="1" schemaName="hsa_roundingdetail" />
+    <AppModuleComponent type="26" id="{4a8e91dc-4f5f-ec11-8f8f-002248283039}" />
+    <AppModuleComponent type="26" id="{433ec6f7-4f5f-ec11-8f8f-002248283039}" />
+    <AppModuleComponent type="26" id="{fd7184c7-c925-4d98-ba63-f072a1224bf6}" />
+    <AppModuleComponent type="60" id="{1f9c8213-c754-488c-ab49-46e730b2fa03}" />
+    <AppModuleComponent type="1" schemaName="hsa_roundingsession" />
+    <AppModuleComponent type="60" id="{4f6d2b0f-3fa6-4578-b7ba-612853b36c71}" />
+    <AppModuleComponent type="62" schemaName="hsa_NonClinicalRounding" />
+  </AppModuleComponents>
+  <AppModuleRoleMaps>
+    <Role id="{627090ff-40a3-4053-8790-584edc5be201}" />
+    <Role id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+  </AppModuleRoleMaps>
+  <LocalizedNames>
+    <LocalizedName description="Non-Clinical Rounding" languagecode="1033" />
+  </LocalizedNames>
+  <appelements>
+    <appelement uniquename="hsa_hsa_NonClinicalRounding_canvasappid_hsa_nonclinicalroundingdefaultcommandlibrary_ad7bb">
+      <canvasappid>
+        <name>hsa_nonclinicalroundingdefaultcommandlibrary_ad7bb</name>
+      </canvasappid>
+      <iscustomizable>1</iscustomizable>
+      <name>hsa_hsa_NonClinicalRounding_canvasappid_hsa_nonclinicalroundingdefaultcommandlibrary_ad7bb</name>
+    </appelement>
+    <appelement uniquename="hsa_hsa_NonClinicalRounding_canvasappid_hsa_roundingmapsample_1edbf">
+      <canvasappid>
+        <name>hsa_roundingmapsample_1edbf</name>
+      </canvasappid>
+      <iscustomizable>1</iscustomizable>
+      <name>hsa_hsa_NonClinicalRounding_canvasappid_hsa_roundingmapsample_1edbf</name>
+    </appelement>
+    <appelement uniquename="hsa_hsa_NonClinicalRounding_canvasappid_hsa_roundingsession_35171">
+      <canvasappid>
+        <name>hsa_roundingsession_35171</name>
+      </canvasappid>
+      <iscustomizable>1</iscustomizable>
+      <name>hsa_hsa_NonClinicalRounding_canvasappid_hsa_roundingsession_35171</name>
+    </appelement>
+    <appelement uniquename="hsa_hsa_NonClinicalRounding_canvasappid_hsa_servicerequest_6e020">
+      <canvasappid>
+        <name>hsa_servicerequest_6e020</name>
+      </canvasappid>
+      <iscustomizable>1</iscustomizable>
+      <name>hsa_hsa_NonClinicalRounding_canvasappid_hsa_servicerequest_6e020</name>
+    </appelement>
+  </appelements>
+</AppModule>

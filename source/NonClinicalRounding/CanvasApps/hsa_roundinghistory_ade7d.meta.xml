@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CanvasApp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>hsa_roundinghistory_ade7d</Name>
+  <AppVersion>2021-12-29T19:57:18Z</AppVersion>
+  <Status>Ready</Status>
+  <CreatedByClientVersion>3.21115.37.0</CreatedByClientVersion>
+  <MinClientVersion>3.21115.37.0</MinClientVersion>
+  <Tags>{"primaryDeviceWidth":"640","primaryDeviceHeight":"1136","sienaVersion":"537cee98-1a6f-4180-8c60-08f0fb26785d","deviceCapabilities":"","supportsPortrait":"true","supportsLandscape":"true","primaryFormFactor":"Phone","publisherVersion":"3.21115.37","minimumRequiredApiVersion":"2.2.0","hasComponent":"false","hasUnlockedComponent":"false","isUnifiedRootApp":"false"}</Tags>
+  <IsCdsUpgraded>0</IsCdsUpgraded>
+  <GalleryItemId xsi:nil="true"></GalleryItemId>
+  <BackgroundColor>RGBA(0,176,240,1)</BackgroundColor>
+  <DisplayName>Rounding History</DisplayName>
+  <Description xsi:nil="true"></Description>
+  <CommitMessage xsi:nil="true"></CommitMessage>
+  <Publisher xsi:nil="true"></Publisher>
+  <AuthorizationReferences>[]</AuthorizationReferences>
+  <ConnectionReferences>{}</ConnectionReferences>
+  <DatabaseReferences>{"default.cds":{"databaseDetails":{"referenceType":"Environmental","environmentName":"default.cds","overrideValues":{"status":"NotSpecified"}},"dataSources":{"Rounding Sessions":{"entitySetName":"hsa_roundingsessions","logicalName":"hsa_roundingsession"},"Users":{"entitySetName":"systemusers","logicalName":"systemuser"},"Contacts":{"entitySetName":"contacts","logicalName":"contact"},"Rounding Details":{"entitySetName":"hsa_roundingdetails","logicalName":"hsa_roundingdetail"}}}}</DatabaseReferences>
+  <AppComponents>[]</AppComponents>
+  <AppComponentDependencies>[]</AppComponentDependencies>
+  <CanConsumeAppPass>1</CanConsumeAppPass>
+  <CanvasAppType>0</CanvasAppType>
+  <BypassConsent>0</BypassConsent>
+  <AdminControlBypassConsent>0</AdminControlBypassConsent>
+  <EmbeddedApp xsi:nil="true"></EmbeddedApp>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <CdsDependencies>{"cdsdependencies":[{"logicalname":"hsa_roundingsession","componenttype":1},{"logicalname":"systemuser","componenttype":1},{"logicalname":"contact","componenttype":1},{"logicalname":"hsa_roundingdetail","componenttype":1}]}</CdsDependencies>
+  <IsCustomizable>1</IsCustomizable>
+  <BackgroundImageUri>/CanvasApps/hsa_roundinghistory_ade7d_BackgroundImageUri</BackgroundImageUri>
+  <DocumentUri>/CanvasApps/hsa_roundinghistory_ade7d_DocumentUri.msapp</DocumentUri>
+</CanvasApp>

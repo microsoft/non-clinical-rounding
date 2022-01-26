@@ -1,0 +1,33 @@
+<appaction uniquename="hsa_FancyCommand!fa20ced6709144d3acf4e01abe3a47cc!hsa_NonClinicalRounding!hsa_roundingdetail!1">
+  <appmoduleid>
+    <uniquename>hsa_NonClinicalRounding</uniquename>
+  </appmoduleid>
+  <buttonlabeltext default="Start Session">
+    <label description="Start Session" languagecode="1033" />
+  </buttonlabeltext>
+  <buttonsequencepriority>5.0000000000</buttonsequencepriority>
+  <context>1</context>
+  <contextentity>
+    <logicalname>hsa_roundingdetail</logicalname>
+  </contextentity>
+  <contextvalue>hsa_roundingdetail</contextvalue>
+  <hidden>0</hidden>
+  <iscustomizable>1</iscustomizable>
+  <location>1</location>
+  <name>FancyCommand!fa20ced6709144d3acf4e01abe3a47cc</name>
+  <onclickeventjavascriptfunctionname>openFullPageFromGrid</onclickeventjavascriptfunctionname>
+  <onclickeventjavascriptparameters>[{"type":24}]</onclickeventjavascriptparameters>
+  <onclickeventjavascriptwebresourceid>
+    <webresourceid>4d4f4559-885e-ec11-8f8f-002248283039</webresourceid>
+  </onclickeventjavascriptwebresourceid>
+  <onclickeventtype>2</onclickeventtype>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <type>0</type>
+  <visibilityformulacomponentlibrary>3e55f0c3-feba-4460-a26d-c0a5003be12a</visibilityformulacomponentlibrary>
+  <visibilityformulacomponentlibraryid>
+    <name>hsa_nonclinicalroundingdefaultcommandlibrary_ad7bb</name>
+  </visibilityformulacomponentlibraryid>
+  <visibilityformulacomponentname>570aec5cb42046209c5e5b367b15323a</visibilityformulacomponentname>
+  <visibilityformulafunctionname>Visible</visibilityformulafunctionname>
+</appaction>

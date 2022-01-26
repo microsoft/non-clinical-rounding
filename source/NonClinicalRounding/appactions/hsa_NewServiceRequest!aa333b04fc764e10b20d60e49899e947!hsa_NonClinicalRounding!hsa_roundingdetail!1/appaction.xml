@@ -1,0 +1,33 @@
+<appaction uniquename="hsa_NewServiceRequest!aa333b04fc764e10b20d60e49899e947!hsa_NonClinicalRounding!hsa_roundingdetail!1">
+  <appmoduleid>
+    <uniquename>hsa_NonClinicalRounding</uniquename>
+  </appmoduleid>
+  <buttonlabeltext default="New Service Request">
+    <label description="New Service Request" languagecode="1033" />
+  </buttonlabeltext>
+  <buttonsequencepriority>7.5000000000</buttonsequencepriority>
+  <context>1</context>
+  <contextentity>
+    <logicalname>hsa_roundingdetail</logicalname>
+  </contextentity>
+  <contextvalue>hsa_roundingdetail</contextvalue>
+  <hidden>0</hidden>
+  <iscustomizable>1</iscustomizable>
+  <location>1</location>
+  <name>NewServiceRequest!aa333b04fc764e10b20d60e49899e947</name>
+  <onclickeventjavascriptfunctionname>openRequestFullPageFromGrid</onclickeventjavascriptfunctionname>
+  <onclickeventjavascriptparameters>[{"type":24}]</onclickeventjavascriptparameters>
+  <onclickeventjavascriptwebresourceid>
+    <webresourceid>4d4f4559-885e-ec11-8f8f-002248283039</webresourceid>
+  </onclickeventjavascriptwebresourceid>
+  <onclickeventtype>2</onclickeventtype>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <type>0</type>
+  <visibilityformulacomponentlibrary>3e55f0c3-feba-4460-a26d-c0a5003be12a</visibilityformulacomponentlibrary>
+  <visibilityformulacomponentlibraryid>
+    <name>hsa_nonclinicalroundingdefaultcommandlibrary_ad7bb</name>
+  </visibilityformulacomponentlibraryid>
+  <visibilityformulacomponentname>a29e1689bf6d4946b2367ab005db6fa2</visibilityformulacomponentname>
+  <visibilityformulafunctionname>Visible</visibilityformulafunctionname>
+</appaction>

@@ -1,0 +1,101 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "hsa_roundingsessions",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "hsa_roundingsession",
+    "MaxGetRowsCount": 500,
+    "Name": "Rounding Sessions",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "hsa_encounter": "Encounter",
+      "hsa_location": "Location",
+      "hsa_Patient": "Patient",
+      "hsa_results": "Results",
+      "hsa_RoundingItem": "Rounding Item",
+      "hsa_roundingsession_AsyncOperations": "System Jobs",
+      "hsa_roundingsession_BulkDeleteFailures": "Bulk Delete Failures",
+      "hsa_roundingsession_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "hsa_roundingsession_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "hsa_roundingsession_ProcessSession": "Process Sessions",
+      "hsa_roundingsession_SyncErrors": "Sync Errors",
+      "hsa_roundingsessionid": "Rounding Session",
+      "hsa_sentimentvalue": "Sentiment Value",
+      "hsa_title": "Title",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Rounding Sessions",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Rounding Sessions (Views)",
+    "Name": "_hsa_roundingsession_views",
+    "RelatedEntityName": "Rounding Sessions",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "2419d529-edf2-4dfe-9f42-abd33f4937bf": "Inactive Rounding Sessions",
+      "6d411aae-d1be-433d-a97f-5b1437e8e463": "Rounding Session Lookup View",
+      "d92a4d5e-b34d-40df-9ae2-cd532c99d0ff": "Rounding Session Advanced Find View",
+      "eeac1036-dae7-43aa-ad6a-4edf60c29f2e": "Active Rounding Sessions",
+      "fdd9dccb-f906-45ea-aecb-3ebb78a48b2d": "Rounding Session Associated View"
+    }
+  },
+  {
+    "DisplayName": "Status (Rounding Sessions)",
+    "Name": "hsa_roundingsession_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Rounding Sessions"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Rounding Sessions",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Rounding Sessions)",
+    "Name": "hsa_roundingsession_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Rounding Sessions"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Rounding Sessions",
+    "Type": "OptionSetInfo"
+  }
+]

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppModuleSiteMap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SiteMapUniqueName>hsa_NonClinicalRounding</SiteMapUniqueName>
+  <EnableCollapsibleGroups>False</EnableCollapsibleGroups>
+  <ShowHome>False</ShowHome>
+  <ShowPinned>True</ShowPinned>
+  <ShowRecents>True</ShowRecents>
+  <SiteMap IntroducedVersion="7.0.0.0">
+    <Area Id="NewArea_d448a1dc" ResourceId="SitemapDesigner.NewTitle" DescriptionResourceId="SitemapDesigner.NewTitle" ShowGroups="true" IntroducedVersion="7.0.0.0">
+      <Titles>
+        <Title LCID="1033" Title="Area1" />
+      </Titles>
+      <Group Id="NewGroup_dc11ac02" ResourceId="SitemapDesigner.NewGroup" DescriptionResourceId="SitemapDesigner.NewGroup" IntroducedVersion="7.0.0.0" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown">
+        <Titles>
+          <Title LCID="1033" Title="My Activity" />
+        </Titles>
+        <SubArea Id="NewSubarea_RoundingList" VectorIcon="/WebResources/msemr_/Icons/CarePlanActivity.SVG" Icon="/WebResources/msemr_/Icons/CarePlanActivity.SVG" Entity="hsa_roundingdetail" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+          <Titles>
+            <Title LCID="1033" Title="Rounding List" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="NewSubarea_125f9d63" ResourceId="SitemapDesigner.NewSubArea" VectorIcon="/WebResources/msemr_/Icons/ClinicAppointment.SVG" Icon="/WebResources/msemr_/Icons/ClinicAppointment.SVG" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" Page="hsa_roundingmapsample_1edbf">
+          <Titles>
+            <Title LCID="1033" Title="Rounding Map" />
+          </Titles>
+        </SubArea>
+      </Group>
+    </Area>
+  </SiteMap>
+  <LocalizedNames>
+    <LocalizedName description="Non-Clinical Rounding" languagecode="1033" />
+  </LocalizedNames>
+</AppModuleSiteMap>

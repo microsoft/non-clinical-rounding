@@ -1,0 +1,19 @@
+{
+  "NamedValues": [
+    {
+      "Kind": "Page",
+      "Name": "Rounding Session",
+      "Value": "custompage:hsa_roundingsession_35171"
+    },
+    {
+      "Kind": "Page",
+      "Name": "Rounding Map Sample",
+      "Value": "custompage:hsa_roundingmapsample_1edbf"
+    },
+    {
+      "Kind": "Page",
+      "Name": "Service Request",
+      "Value": "custompage:hsa_servicerequest_6e020"
+    }
+  ]
+}

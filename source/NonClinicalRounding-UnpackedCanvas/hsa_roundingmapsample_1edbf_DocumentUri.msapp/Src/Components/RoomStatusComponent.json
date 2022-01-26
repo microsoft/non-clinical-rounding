@@ -1,0 +1,101 @@
+{
+  "ComponentAllowCustomization": true,
+  "ComponentChangedSinceFileImport": true,
+  "ComponentManifest": {
+    "AllowAccessToGlobals": true,
+    "AllowCustomization": true,
+    "Description": "",
+    "Name": "RoomStatusComponent",
+    "TemplateGuid": "2648b64e5c51413e8804aa0103560b7c"
+  },
+  "ComponentType": "CanvasComponent",
+  "CustomGroupControlTemplateName": "",
+  "CustomProperties": [
+    {
+      "Category": 0,
+      "DisplayName": "Align Top",
+      "Hidden": false,
+      "IsResettable": true,
+      "Name": "AlignTop",
+      "PropertyDataTypeKey": "Boolean",
+      "Tooltip": "top",
+      "Type": "{\"Version\":\"1.320\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "Alert Size",
+      "Hidden": false,
+      "Name": "AlertSize",
+      "PropertyDataTypeKey": "Number",
+      "Tooltip": "Alert text size (e.g. 20)",
+      "Type": "{\"Version\":\"1.320\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "Room Record",
+      "Hidden": false,
+      "Name": "RoomRecord",
+      "PropertyDataTypeKey": "Record",
+      "Tooltip": "The record of the room that will be used to identify alerts",
+      "Type": "{\"Version\":\"1.320\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Record\",\"EnumString\":\"\",\"Type\":[{\"Name\":\"SampleBooleanField\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"SampleNumberField\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"SampleStringField\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "Status Text",
+      "Hidden": false,
+      "Name": "StatusText",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "The status for the room",
+      "Type": "{\"Version\":\"1.320\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "Alert Text",
+      "Hidden": false,
+      "Name": "AlertText",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "Text value alert",
+      "Type": "{\"Version\":\"1.320\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "Hover Color",
+      "Hidden": false,
+      "Name": "HoverColor",
+      "PropertyDataTypeKey": "Color",
+      "Tooltip": "A custom property",
+      "Type": "{\"Version\":\"1.320\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Color\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "Room Name",
+      "Hidden": false,
+      "Name": "RoomName",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "The text name of the room",
+      "Type": "{\"Version\":\"1.320\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 2,
+      "DisplayName": "OnSelect",
+      "Hidden": false,
+      "Name": "OnSelect",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "OnSelect property",
+      "Type": "{\"Version\":\"1.320\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    }
+  ],
+  "FirstParty": true,
+  "Id": "http://microsoft.com/appmagic/Component",
+  "IsComponentLocked": false,
+  "IsComponentTemplate": true,
+  "IsCustomGroupControlTemplate": false,
+  "IsPcfControl": false,
+  "IsPremiumPcfControl": false,
+  "IsWidgetTemplate": false,
+  "LastModifiedTimestamp": "637783037454260262",
+  "Name": "2648b64e5c51413e8804aa0103560b7c",
+  "OverridableProperties": {},
+  "TemplateOriginalName": "0482fe9cf0fc4300ab6da845bdbdb90d",
+  "Version": "637763006980531933"
+}

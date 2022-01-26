@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{4f6d2b0f-3fa6-4578-b7ba-612853b36c71}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{633ce72e-86d8-40b0-93d1-2d45e12b7d7d}" IsUserDefined="1" name="tab_general">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="50%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{a2f9b1b9-438a-4f75-84c2-58dd1502c746}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{5237ea0c-9100-4ac2-8efa-8d38e7dc6900}">
+                        <labels>
+                          <label description="Title" languagecode="1033" />
+                        </labels>
+                        <control id="hsa_title" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="hsa_title" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6a2647ab-09cf-4b12-b6b1-735dd1f8917b}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Patient" languagecode="1033" />
+                        </labels>
+                        <control id="hsa_patient" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="hsa_patient" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e4511527-666c-44dc-aeef-5be1a1f7be84}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Location" languagecode="1033" />
+                        </labels>
+                        <control id="hsa_location" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="hsa_location" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{55b0d092-13d7-429f-bf0c-8bb855452074}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Encounter" languagecode="1033" />
+                        </labels>
+                        <control id="hsa_encounter" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="hsa_encounter" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d4171710-afa5-421a-83fb-887d95bf95ad}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="50%">
+              <sections>
+                <section name="_section_805" id="d650cae5-b11d-4030-b4ca-892415cb4a08" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Details" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{ee2cb581-280d-4acc-bd2a-42e40edc2452}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Results" languagecode="1033" />
+                        </labels>
+                        <control id="hsa_results" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="hsa_results" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{36044c15-2408-4600-a332-ec089c1841c5}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{d3b0335a-d5f8-4b0c-85cd-6578d1fd5d85}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{39656cf0-00ce-48af-b0da-3a69282725a1}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{e4c65aba-a018-4b4b-bb91-6703508b21c0}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{54a90199-e402-4442-bfb1-84b4d4af28f9}" locklevel="0" colspan="1" rowspan="1">
+              <labels>
+                <label description="Patient" languagecode="1033" />
+              </labels>
+              <control id="header_hsa_patient" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="hsa_patient" disabled="false" />
+            </cell>
+            <cell id="{6af52062-8bb1-46ab-bf34-7d4780d619d1}" locklevel="0" colspan="1" rowspan="1">
+              <labels>
+                <label description="Rounding Item" languagecode="1033" />
+              </labels>
+              <control id="header_hsa_roundingitem" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="hsa_roundingitem" disabled="false" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{0465bf1e-9421-4eb9-a9fc-80d7d936d672}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{d2e1488d-1971-4823-b8f6-a6bcf319f686}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{4083ab0f-7559-4cb1-8f5f-1c1111431e31}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{7409b1ab-abb9-4c57-b449-5aa1617da207}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

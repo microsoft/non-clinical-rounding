@@ -1,0 +1,263 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "msemr_locations",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "msemr_location",
+    "MaxGetRowsCount": 500,
+    "Name": "Locations",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "hsa_RoundingDetail_location_location": "Rounding Details",
+      "hsa_RoundingSession_location": "Rounding Sessions",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "msemr_addresscity": "Address City",
+      "msemr_addresscountry": "Address Country",
+      "msemr_addressdistinct": "Address Distinct",
+      "msemr_addressline1": "Street 1",
+      "msemr_addressline2": "Street 2",
+      "msemr_addressline3": "Street 3",
+      "msemr_addressperiodend": "Address Period End",
+      "msemr_addressperiodstart": "Address Period Start",
+      "msemr_addresspostalcode": "Address Postal Code",
+      "msemr_addressstate": "Address State",
+      "msemr_addresstext": "Address Text",
+      "msemr_addresstype": "Address Type",
+      "msemr_addressuse": "Address Use",
+      "msemr_azurefhirid": "Azure FHIR ID",
+      "msemr_azurefhirlastupdatedon": "Azure FHIR Last Updated On",
+      "msemr_azurefhirversion": "Azure FHIR Version",
+      "msemr_Contract_Domain_msemr_location": "Contracts (msemr_Contract_Domain_msemr_location)",
+      "msemr_Contract_Site_msemr_location": "Contracts (msemr_Contract_Site_msemr_location)",
+      "msemr_description": "Description",
+      "msemr_DiagnosticReport_SubjectLocation_ms": "Diagnostic Reports",
+      "msemr_EligibilityRequest_Facility_msemr_l": "Eligibility Requests",
+      "msemr_EligibilityRequestItem_FacilityLoca": "Eligibility Request Items",
+      "msemr_location_AsyncOperations": "System Jobs",
+      "msemr_location_BulkDeleteFailures": "Bulk Delete Failures",
+      "msemr_location_DuplicateBaseRecord": "Duplicate Records (msemr_location_DuplicateBaseRecord)",
+      "msemr_location_DuplicateMatchingRecord": "Duplicate Records (msemr_location_DuplicateMatchingRecord)",
+      "msemr_location_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "msemr_location_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "msemr_location_ProcessSession": "Process Sessions",
+      "msemr_location_SyncErrors": "Sync Errors",
+      "msemr_locationalias1": "Alias 1",
+      "msemr_locationalias2": "Alias 2",
+      "msemr_locationalias3": "Alias 3",
+      "msemr_locationid": "Location",
+      "msemr_locationnumber": "Location Number",
+      "msemr_locationpositionaltitude": "Position Altitude",
+      "msemr_locationpositionlatitude": "Position Latitude",
+      "msemr_locationpositionlongitude": "Position Longitude",
+      "msemr_ManagingOrganization": "Managing Organization",
+      "msemr_mode": "Mode",
+      "msemr_msemr_location_msemr_appointmentemr_ActorLocation": "Appointments (EMR)",
+      "msemr_msemr_location_msemr_appointmentemrparticipant_ActorLocation": "Appointment (EMR) Participants",
+      "msemr_msemr_location_msemr_billingaccount_SubjectLocation": "Billing Accounts",
+      "msemr_msemr_location_msemr_careplanactivity_ActivityLocation": "Care Plan Activities",
+      "msemr_msemr_location_msemr_claim_AccidentLocation": "Claims (msemr_msemr_location_msemr_claim_AccidentLocation)",
+      "msemr_msemr_location_msemr_claim_Facility": "Claims (msemr_msemr_location_msemr_claim_Facility)",
+      "msemr_msemr_location_msemr_device_Location": "Devices",
+      "msemr_msemr_location_msemr_devicerequest_SubjectTypeLocation": "Device Requests",
+      "msemr_msemr_location_msemr_encounter_HospitalizationDestination": "Encounters (msemr_msemr_location_msemr_encounter_HospitalizationDestination)",
+      "msemr_msemr_location_msemr_encounter_HospitalizationOrigin": "Encounters (msemr_msemr_location_msemr_encounter_HospitalizationOrigin)",
+      "msemr_msemr_location_msemr_encounterlocation_EncounterLocationIdentifier": "Encounter Locations",
+      "msemr_msemr_location_msemr_healthcareservicecoveragearea_CoverageArea": "Healthcare Service Coverage Areas",
+      "msemr_msemr_location_msemr_healthcareservicelocation_Location": "Healthcare Service Locations",
+      "msemr_msemr_location_msemr_identifiesspecifictimeswhentheeventoccu_location": "Activity Definitions",
+      "msemr_msemr_location_msemr_location_PartOf": "Locations",
+      "msemr_msemr_location_msemr_locationendpoint_Location": "Location End Points",
+      "msemr_msemr_location_msemr_locationtelecom_Location": "Location Telecoms",
+      "msemr_msemr_location_msemr_observation_SubjectTypeLocation": "Observations",
+      "msemr_msemr_location_msemr_practitionerrolelocation_Location": "Practitioner Role Locations",
+      "msemr_msemr_location_msemr_procedure_Location": "Procedures",
+      "msemr_msemr_location_msemr_procedurerequest_SubjectLocation": "Procedure Requests",
+      "msemr_msemr_location_msemr_schedule_ActorHealthCareService": "Schedules",
+      "msemr_msemr_location_msemr_scheduleactor_ActorLocation": "Schedule Actors",
+      "msemr_name": "Name",
+      "msemr_operationalstatus": "Operational Status",
+      "msemr_PartOf": "Part Of",
+      "msemr_PhysicalType": "Physical Type",
+      "msemr_status": "Status (msemr_status)",
+      "msemr_Type": "Type",
+      "organizationid": "Organization Id",
+      "overriddencreatedon": "Record Created On",
+      "statecode": "Status (statecode)",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Locations",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Locations (Views)",
+    "Name": "_msemr_location_views",
+    "RelatedEntityName": "Locations",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "2b12f13a-fef5-4071-b618-aa8f3ad22232": "Location Advanced Find View",
+      "5dc4ff8c-3450-482d-beba-b3ff23c41ddf": "Inactive Locations",
+      "aa35fed9-4768-4d93-9758-df6c324dfdaa": "Location Associated View",
+      "ce5d473c-6952-40bf-a314-b2c0d08d8c1a": "Active Locations",
+      "e0c832ab-1708-44e2-8dee-48258243adf3": "Location Lookup View"
+    }
+  },
+  {
+    "DisplayName": "Address Type",
+    "Name": "msemr_addresstype",
+    "OptionSetInfoNameMapping": {
+      "935000000": "Postal",
+      "935000001": "Physical",
+      "935000002": "Both"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "msemr_addresstype",
+        "OptionSetReferenceEntityName": "Locations"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "msemr_addresstype",
+    "RelatedEntityName": "Locations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Address Use",
+    "Name": "msemr_addressuse",
+    "OptionSetInfoNameMapping": {
+      "935000000": "Home",
+      "935000001": "Work",
+      "935000002": "Temp",
+      "935000003": "Old"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "msemr_addressuse",
+        "OptionSetReferenceEntityName": "Locations"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "msemr_addressuse",
+    "RelatedEntityName": "Locations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (Locations)",
+    "Name": "msemr_location_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Locations"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Locations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Locations)",
+    "Name": "msemr_location_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Locations"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Locations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Location Mode",
+    "Name": "msemr_locationmode",
+    "OptionSetInfoNameMapping": {
+      "935000000": "instance",
+      "935000001": "Kind"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "msemr_mode",
+        "OptionSetReferenceEntityName": "Locations"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "msemr_mode",
+    "RelatedEntityName": "Locations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Location Status",
+    "Name": "msemr_locationstatus",
+    "OptionSetInfoNameMapping": {
+      "935000000": "Active",
+      "935000001": "Suspended",
+      "935000002": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "msemr_status",
+        "OptionSetReferenceEntityName": "Locations"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "msemr_status",
+    "RelatedEntityName": "Locations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Operational Status",
+    "Name": "msemr_operationalstatus",
+    "OptionSetInfoNameMapping": {
+      "935000000": "Closed",
+      "935000001": "Housekeeping",
+      "935000002": "Isolated",
+      "935000003": "Contaminated",
+      "935000004": "Occupied",
+      "935000005": "Unoccupied"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "msemr_operationalstatus",
+        "OptionSetReferenceEntityName": "Locations"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "msemr_operationalstatus",
+    "RelatedEntityName": "Locations",
+    "Type": "OptionSetInfo"
+  }
+]

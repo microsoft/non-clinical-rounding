@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{4a8e91dc-4f5f-ec11-8f8f-002248283039}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="hsa_title" select="1" icon="1" preview="1">
+        <row name="result" id="hsa_roundingdetailid">
+          <cell name="hsa_title" width="234" />
+          <cell name="hsa_sentimentcode" width="86" />
+          <cell name="hsa_alert" width="100" />
+          <cell name="hsa_lastcheckin" width="167" />
+          <cell name="hsa_location" width="148" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical" distinct="true">
+        <entity name="hsa_roundingdetail">
+          <attribute name="hsa_roundingdetailid" />
+          <attribute name="hsa_title" />
+          <attribute name="hsa_location" />
+          <attribute name="hsa_lastcheckin" />
+          <attribute name="hsa_alert" />
+          <attribute name="hsa_sentimentcode" />
+          <order attribute="hsa_title" descending="false" />
+          <order attribute="hsa_alert" descending="true" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+            <condition attribute="hsa_sentimentcode" operator="in">
+              <value>123000001</value>
+              <value>123000002</value>
+            </condition>
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Low Sentiment" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

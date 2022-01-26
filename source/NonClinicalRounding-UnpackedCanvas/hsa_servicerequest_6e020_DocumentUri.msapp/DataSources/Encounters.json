@@ -1,0 +1,282 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "msemr_encounters",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "msemr_encounter",
+    "Name": "Encounters",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "hsa_RoundingDetail_encounter": "Rounding Details",
+      "hsa_RoundingSession_encounter": "Rounding Sessions",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "msemr_AppointmentEMR": "Appointment (EMR)",
+      "msemr_azurefhirid": "Azure FHIR ID",
+      "msemr_azurefhirlastupdatedon": "Azure FHIR Last Updated On",
+      "msemr_azurefhirversion": "Azure FHIR Version",
+      "msemr_class": "Class (msemr_class)",
+      "msemr_ContextEncounter": "Context (Encounter)",
+      "msemr_ContextEpisodeofCare": "Context (Episode of Care)",
+      "msemr_DiagnosticReport_Encounter_msemr_en": "Diagnostic Reports",
+      "msemr_duration": "Duration (msemr_duration)",
+      "msemr_encounter_AsyncOperations": "System Jobs",
+      "msemr_encounter_BulkDeleteFailures": "Bulk Delete Failures",
+      "msemr_encounter_DuplicateBaseRecord": "Duplicate Records (msemr_encounter_DuplicateBaseRecord)",
+      "msemr_encounter_DuplicateMatchingRecord": "Duplicate Records (msemr_encounter_DuplicateMatchingRecord)",
+      "msemr_encounter_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "msemr_encounter_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "msemr_encounter_ProcessSession": "Process Sessions",
+      "msemr_encounter_SyncErrors": "Sync Errors",
+      "msemr_encounterclass": "Class (msemr_encounterclass)",
+      "msemr_encounterenddate": "End Date/Time",
+      "msemr_EncounterGroupIdentifier": "Group",
+      "msemr_encounterid": "Encounter",
+      "msemr_encounteridentifier": "Encounter Number",
+      "msemr_encounterlength": "Duration (msemr_encounterlength)",
+      "msemr_EncounterParentEncounterIdentifier": "Parent Enounter",
+      "msemr_EncounterPatientIdentifier": "Patient",
+      "msemr_EncounterPriority": "Priority (msemr_EncounterPriority)",
+      "msemr_encounterstartdate": "Start Date/Time",
+      "msemr_encounterstatus": "Status (msemr_encounterstatus)",
+      "msemr_HospitalizationAdmitSource": "Admit Source",
+      "msemr_HospitalizationDestination": "Destination",
+      "msemr_HospitalizationDischargeDisposition": "Discharge Disposition",
+      "msemr_HospitalizationOrigin": "Origin",
+      "msemr_hospitalizationpreadmissionnumber": "Pre Admission Number",
+      "msemr_HospitalizationReadmission": "Re admission",
+      "msemr_msemr_encounter_msemr_appointmentemrrequestedperiod_appointmentemr": "Appointment (EMR) Requested Periods",
+      "msemr_msemr_encounter_msemr_careplan_EncounterIdentifier": "Care Plans",
+      "msemr_msemr_encounter_msemr_careteam_Encounter": "Care Teams",
+      "msemr_msemr_encounter_msemr_clinicalimpression_ContextEncounter": "Clinical Impressions",
+      "msemr_msemr_encounter_msemr_communicationrequest_ContextEncounter": "Communication Requests",
+      "msemr_msemr_encounter_msemr_condition_ContextEncounter": "Conditions (msemr_msemr_encounter_msemr_condition_ContextEncounter)",
+      "msemr_msemr_encounter_msemr_condition_Encounter": "Conditions (msemr_msemr_encounter_msemr_condition_Encounter)",
+      "msemr_msemr_encounter_msemr_devicerequest_ContextTypeEncounter": "Device Requests",
+      "msemr_msemr_encounter_msemr_encounter_ContextEncounter": "Encounters (msemr_msemr_encounter_msemr_encounter_ContextEncounter)",
+      "msemr_msemr_encounter_msemr_encounter_EncounterParentEncounterIdentifier": "Encounters (msemr_msemr_encounter_msemr_encounter_EncounterParentEncounterIdentifier)",
+      "msemr_msemr_encounter_msemr_encounteraccount_Encounter": "Encounter Accounts",
+      "msemr_msemr_encounter_msemr_encounterclasshistory_Encounter": "Encounter Class Histories",
+      "msemr_msemr_encounter_msemr_encounterdiagnosis_Encounter": "Encounter Diagnoses",
+      "msemr_msemr_encounter_msemr_encounterepisodeofcare_Encounter": "Encounter Episodes Of Care",
+      "msemr_msemr_encounter_msemr_encounterhospitalizationarrangement_Encounter": "Encounter Hospitalization Arrangements",
+      "msemr_msemr_encounter_msemr_encounterhospitalizationcourtesy_Encounter": "Encounter Hospitalization Courtesies",
+      "msemr_msemr_encounter_msemr_encounterhospitalizationdiet_Encounter": "Encounter Hospitalization Diets",
+      "msemr_msemr_encounter_msemr_encounterlocation_Encounter": "Encounter Locations",
+      "msemr_msemr_encounter_msemr_encounterparticipan": "Encounter Participants",
+      "msemr_msemr_encounter_msemr_encounterreason_Encounter": "Encounter Reasons",
+      "msemr_msemr_encounter_msemr_encounterreferralrequest_Encounter": "Encounter Referral Requests",
+      "msemr_msemr_encounter_msemr_encounterstatushistory_Encounter": "Encounter Status Histories",
+      "msemr_msemr_encounter_msemr_encountertype_Encounter": "Encounter Types",
+      "msemr_msemr_encounter_msemr_medicalidentifier": "Medical Identifiers",
+      "msemr_msemr_encounter_msemr_medicationadministration_ContextTypeEncounter": "Medication Administration",
+      "msemr_msemr_encounter_msemr_medicationrequest_ContextTypeEncounter": "Medication Requests",
+      "msemr_msemr_encounter_msemr_nutritionorder_Encounter": "Nutrition Orders",
+      "msemr_msemr_encounter_msemr_observation_ConextTypeEncounter": "Observations",
+      "msemr_msemr_encounter_msemr_procedure_Encounter": "Procedures",
+      "msemr_msemr_encounter_msemr_procedurerequest_SubjectContextEncounter": "Procedure Requests",
+      "msemr_msemr_encounter_msemr_referralrequest_InitiatingEncounter": "Referral Requests (msemr_msemr_encounter_msemr_referralrequest_InitiatingEncounter)",
+      "msemr_msemr_encounter_msemr_referralrequest_SubjectContextEncounter": "Referral Requests (msemr_msemr_encounter_msemr_referralrequest_SubjectContextEncounter)",
+      "msemr_msemr_encounter_msemr_requestgroup_ContextTypeEncounter": "Request Groups",
+      "msemr_msemr_encounter_msemr_riskassessment_contextencounter": "Risk Assessments",
+      "msemr_msemr_encounter_msemr_visionprescription_Encounter": "Vision Prescriptions",
+      "msemr_msemr_encounter_task_ContextEncounter": "Tasks",
+      "msemr_name": "Encounter Name",
+      "msemr_Onbehalfof": "On behalf of",
+      "msemr_periodend": "Period End",
+      "msemr_periodstart": "Period Start",
+      "msemr_priority": "Priority (msemr_priority)",
+      "msemr_SubjectPatient": "Subject (Patient)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status (statecode)",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Encounters",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Encounters (Views)",
+    "Name": "_msemr_encounter_views",
+    "RelatedEntityName": "Encounters",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "44df9e4d-35da-41dd-9880-ae440e825167": "Encounter Associated View",
+      "84067937-7059-4b4f-8be4-6987bd521718": "Encounter Lookup View",
+      "bbde6c47-c202-4bd0-887b-306a269a28f3": "Inactive Encounters",
+      "ef127698-c9ec-42d7-837b-7450c7c04b27": "Encounter Advanced Find View",
+      "ff456140-09b7-4999-a7b7-beb0b296262b": "Active Encounters"
+    }
+  },
+  {
+    "DisplayName": "Class (Encounters)",
+    "Name": "msemr_encounter_msemr_class",
+    "OptionSetInfoNameMapping": {
+      "935000000": "ambulatory",
+      "935000001": "emergency",
+      "935000002": "field",
+      "935000003": "home health",
+      "935000004": "inpatient encounter",
+      "935000005": "inpatient acute",
+      "935000006": "inpatient non-acute",
+      "935000007": "pre-admission",
+      "935000008": "short stay",
+      "935000009": "virtual"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "msemr_class",
+        "OptionSetReferenceEntityName": "Encounters"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "msemr_class",
+    "RelatedEntityName": "Encounters",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Priority (Encounters)",
+    "Name": "msemr_encounter_msemr_priority",
+    "OptionSetInfoNameMapping": {
+      "935000000": "ASAP",
+      "935000001": "callback results",
+      "935000002": "callback for scheduling",
+      "935000003": "callback placer for scheduling",
+      "935000004": "contact recipient for scheduling",
+      "935000005": "elective",
+      "935000006": "emergency",
+      "935000007": "preop",
+      "935000008": "as needed",
+      "935000009": "routine",
+      "935000010": "rush reporting",
+      "935000011": "stat",
+      "935000012": "timing critical",
+      "935000013": "use as directed",
+      "935000014": "urgent"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "msemr_priority",
+        "OptionSetReferenceEntityName": "Encounters"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "msemr_priority",
+    "RelatedEntityName": "Encounters",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (Encounters)",
+    "Name": "msemr_encounter_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Encounters"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Encounters",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Encounters)",
+    "Name": "msemr_encounter_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Planned",
+      "2": "Inactive",
+      "935000000": "Arrived",
+      "935000001": "Triaged",
+      "935000002": "In Progress",
+      "935000003": "On Leave",
+      "935000004": "Finished",
+      "935000005": "Cancelled",
+      "935000006": "Entered in Error",
+      "935000007": "Unknown"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Encounters"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Encounters",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Encounter Class",
+    "Name": "msemr_encounterclass",
+    "OptionSetInfoNameMapping": {
+      "935000000": "Inpatient",
+      "935000001": "Outpatient",
+      "935000002": "Ambulatory",
+      "935000003": "Emergency"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "msemr_encounterclass",
+        "OptionSetReferenceEntityName": "Encounters"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "msemr_encounterclass",
+    "RelatedEntityName": "Encounters",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Encounter Status",
+    "Name": "msemr_encounterstatus",
+    "OptionSetInfoNameMapping": {
+      "935000000": "Planned",
+      "935000001": "Arrived",
+      "935000002": "Triaged",
+      "935000003": "In Progress",
+      "935000004": "On Leave",
+      "935000005": "Finished",
+      "935000006": "Cancelled",
+      "935000007": "Entered in Error",
+      "935000008": "Unknown"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "msemr_encounterstatus",
+        "OptionSetReferenceEntityName": "Encounters"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "msemr_encounterstatus",
+    "RelatedEntityName": "Encounters",
+    "Type": "OptionSetInfo"
+  }
+]
