@@ -1,0 +1,50 @@
+RoomStatusComponent As CanvasComponent:
+    AlertSize: =20
+    AlertText: =""
+    AlignTop: =true
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =100
+    HoverColor: =RGBA(0, 0, 200, .4)
+    OnSelect: ="Text"
+    RoomName: ="Text"
+    RoomRecord: |-
+        ={SampleStringField: "SampleText", SampleNumberField: 10, SampleBooleanField: true}
+    StatusText: ="-"
+    Width: =100
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    Container2_1 As groupContainer.horizontalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutAlignItems: =If(RoomStatusComponent.AlignTop=true,LayoutAlignItems.Start,LayoutAlignItems.End)
+        LayoutMode: =LayoutMode.Auto
+        Width: =Parent.Width
+        ZIndex: =1
+
+        Label1_1 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =35
+            LayoutMinHeight: =70
+            LayoutMinWidth: =560
+            Size: =RoomStatusComponent.AlertSize
+            Text: =If(Len(RoomStatusComponent.AlertText)>0,RoomStatusComponent.AlertText & "   ") & RoomStatusComponent.StatusText
+            Width: =Parent.Width
+            ZIndex: =1
+
+    Rectangle1 As rectangle:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(0, 0, 0, 0)
+        FocusedBorderColor: =RGBA(0, 120, 212, 1)
+        HoverFill: =RoomStatusComponent.HoverColor
+        OnSelect: =RoomStatusComponent.OnSelect()
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =100
+        ZIndex: =2
+

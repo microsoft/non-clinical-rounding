@@ -1,0 +1,27 @@
+<appaction uniquename="hsa_StartSession!859413d85b764158ba0ca4e49c6d2faa!hsa_NonClinicalRounding!hsa_roundingdetail!0">
+  <appmoduleid>
+    <uniquename>hsa_NonClinicalRounding</uniquename>
+  </appmoduleid>
+  <buttonlabeltext default="Start Session">
+    <label description="Start Session" languagecode="1033" />
+  </buttonlabeltext>
+  <buttonsequencepriority>5.5000000000</buttonsequencepriority>
+  <context>1</context>
+  <contextentity>
+    <logicalname>hsa_roundingdetail</logicalname>
+  </contextentity>
+  <contextvalue>hsa_roundingdetail</contextvalue>
+  <hidden>0</hidden>
+  <iscustomizable>1</iscustomizable>
+  <location>0</location>
+  <name>StartSession!859413d85b764158ba0ca4e49c6d2faa</name>
+  <onclickeventjavascriptfunctionname>openFullPageFromItem</onclickeventjavascriptfunctionname>
+  <onclickeventjavascriptparameters>[{"type":4}]</onclickeventjavascriptparameters>
+  <onclickeventjavascriptwebresourceid>
+    <webresourceid>4d4f4559-885e-ec11-8f8f-002248283039</webresourceid>
+  </onclickeventjavascriptwebresourceid>
+  <onclickeventtype>2</onclickeventtype>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <type>0</type>
+</appaction>

@@ -1,0 +1,84 @@
+{
+  "QualifiedValues": [
+    {
+      "Kind": "default.cds_hsa_roundingsession_forms",
+      "Namespace": "Rounding Sessions (Forms)",
+      "Values": {
+        "Information": "0611ce99-c734-4d27-926d-6144d9eec9df"
+      }
+    },
+    {
+      "Kind": "default.cds_systemuser_forms",
+      "Namespace": "Users (Forms)",
+      "Values": {
+        "Application User": "d26924ef-4d80-46f7-ab1d-e6ae80a54ce8",
+        "Information": "094fb08a-77bb-49e0-b7ea-8dbddfd01294",
+        "User": "c2cd9e55-d4b4-4b55-9951-16ead79643e5",
+        "User form – Business": "c2413504-7eb2-4c59-a087-95d819866114",
+        "User Hierarchy Tile Form": "c68d6c09-d7a7-4959-8d0f-44b8cff9b452",
+        "User Information Form": "20bc9121-0a7c-46b6-9c11-5db245e8214d"
+      }
+    },
+    {
+      "Kind": "default.cds_contact_forms",
+      "Namespace": "Contacts (Forms)",
+      "Values": {
+        "account contact card": "29de27bc-a257-4f29-99cf-bab4a84e688f",
+        "AddCareTeam": "0e7cefd9-6e51-47ca-862d-9e57dd6ee599",
+        "App for Outlook Contact Card": "cdbb9298-3b2e-41f3-8f4a-0168d6b09fc4",
+        "App for Outlook Contact Quick View": "3d22ab88-96c8-4b3f-a533-d4827e2925c9",
+        "CareTeam": "12a72ee8-1887-4ac1-8e16-2e68c02d540f",
+        "CareTeamMemberContact": "9577943f-35ac-4b59-8588-36ba2d96e4f0",
+        "Cases for Customer": "5194a156-576a-4fa1-bf1a-abf7a41b0e8c",
+        "ChangePassword": "01707dcb-aeca-4b87-a9e4-a5b199a54ece",
+        "Contact": "1fed44d1-ae68-4a41-bd2b-f13acac4acfa",
+        "Contact - Mobile": "28b5b9b6-dfa2-45d6-8a81-3f6ba02a098a",
+        "contact card": "707fc57b-c5e6-471b-a180-e37ed28a38e2",
+        "Contact Card form": "bc0f68dd-a4b1-4a8f-bed3-c8f5db2f89cf",
+        "Contact for Interactive experience": "cc760212-3eab-4009-b5c3-ea9cf6f3e141",
+        "Contact for Multisession experience": "e06af4d1-2812-45c7-a9c2-9fb73fee7bec",
+        "Contact Quick Create": "661157fe-2fc9-4eaa-835f-5bfa2f7b64f7",
+        "Contact Quick Create - Field Service": "477d15ad-60b2-4d8e-9508-b3d2b87c9868",
+        "Contact Quick Form": "bdb0ae1c-32fa-4374-b637-8dafe107bc44",
+        "Contact Reference Panel": "d880c3cf-80e2-42f3-82f9-24d040d09f17",
+        "Contacts Dashboard": "70ad8b15-e3f3-4d7d-9e4b-16cb4e51b484",
+        "Customer profile": "05ea391a-d034-43fe-849b-b4fa3213a2b2",
+        "In Context Form": "4c9c89b9-f909-4b34-8f63-b87d7ff2f0c4",
+        "Information": "894cc46a-b0cb-4ab0-8bf6-200544e46a2d",
+        "Invite Web Form": "d6190b35-9474-4098-9698-33f6627eb3bf",
+        "Live Persona Card Form": "449faa0e-f471-48ec-87d0-4719909546d2",
+        "Patient": "adfda52b-3fed-ea11-a817-000d3a8ddfb2",
+        "Patient - Non-Clinical Rounds": "26fc806f-c15d-ec11-8f8f-002248283039",
+        "Patient FHIR View": "7cdafed4-a4fe-ea11-a815-000d3a37fc99",
+        "Patient Quick View": "8abf88b0-c1e0-ea11-a813-000d3a579c39",
+        "Patient Quick View (Virtual Clinic) - Allergies": "8bb7f535-55e4-46e8-b9df-03a307e0c549",
+        "Patient Quick View (Virtual Clinic) - Appointments": "2164317a-bac7-4208-9cb9-f1ffa3acb8b7",
+        "Patient Quick View (Virtual Clinic) - Conditions": "305dfb32-d06f-4899-bd65-4e727aeeb984",
+        "Patient Quick View (Virtual Clinic) - Encounters": "9ee44d6d-05fe-4788-9b3e-7003e71271e1",
+        "Patient Quick View (Virtual Clinic) - Medications": "79924c07-1cb8-42fe-b661-fa5e2b970e82",
+        "Patient Quick View (Virtual Clinic) - Procedures": "e4c6376a-0128-4d8a-98ba-09c3ab520307",
+        "Patient Quick View (Virtual Visit) - Patient Info": "62107201-f41f-4e7d-99e7-0762a9ff8e6e",
+        "Patient Rounding Sessions QV": "d4bc29af-3667-ec11-8f8f-000d3a1514b7",
+        "Patient Rounds QV": "9c476640-3367-ec11-8f8f-000d3a1514b7",
+        "Portal Contact": "3fb651a5-cdbf-46c9-87fb-d2c748662bb8",
+        "Portal Contact for Interactive experience": "49d062e4-d892-4baa-af50-6387989ac638",
+        "Practitioner": "dddd922b-0f07-eb11-a813-000d3a31c867",
+        "Profile Web Form": "0bd832d5-9d6a-456d-bdc1-21129e82cc0f",
+        "Profile Web Form - Japanese": "36cc830c-eeab-4a89-a7c9-da2ac6c451a1",
+        "Recent Cases and Entitlements": "f3b707fb-3b5f-45f9-9c6b-5e573bb5d19e",
+        "Sales Insights": "293c878f-f068-40a0-ae48-4297e060871c",
+        "Social Profiles": "7bb87dfd-ec3e-4ed9-8e3e-5725d3067295",
+        "TimelineWallControl - Contact - Main": "986258b5-2985-4ae0-970a-5e1d108ab793",
+        "Update Contact": "26843818-6508-4afe-9342-5fae2ebf15ca"
+      }
+    },
+    {
+      "Kind": "default.cds_hsa_roundingdetail_forms",
+      "Namespace": "Rounding Details (Forms)",
+      "Values": {
+        "Information": "d6b2bae6-b562-445b-b84e-b9b180cc4a9a",
+        "Rounding Form": "1f9c8213-c754-488c-ab49-46e730b2fa03"
+      }
+    }
+  ]
+}

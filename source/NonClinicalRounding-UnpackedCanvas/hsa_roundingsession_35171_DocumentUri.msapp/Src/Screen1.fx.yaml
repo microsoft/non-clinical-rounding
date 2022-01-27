@@ -1,0 +1,99 @@
+Screen1 As screen:
+    LoadingSpinnerColor: =RGBA(0, 120, 212, 1)
+
+    Label1 As Label:
+        DisplayMode: =DisplayMode.Edit
+        FontWeight: =FontWeight.Bold
+        Height: =32
+        Text: =RecordItem.Title
+        Width: =300
+        X: =12
+        Y: =8
+        ZIndex: =1
+
+    "'Save Button' As Button":
+        DisplayMode: =DisplayMode.Edit
+        Height: =35
+        OnSelect: |-
+            =Patch('Rounding Sessions',Defaults('Rounding Sessions'),{Patient:RecordItem.Patient,'Rounding Item':RecordItem,Location:RecordItem.Location,Encounter:RecordItem.Encounter,Title:Rating1.Value & ":" & Label2.Text & " recorded by " & User().FullName,Results:myjsonpayload});
+            Switch(Label2.Text,
+                "🔴",Patch('Rounding Details',RecordItem,{'Last Check-in':Now(),'Sentiment Label':"🔴",Sentiment:'Sentiment Code'.'🔴 Red'}),
+                "🟡",Patch('Rounding Details',RecordItem,{'Last Check-in':Now(),'Sentiment Label':"🟡",Sentiment:'Sentiment Code'.'🟡 Yellow'}),
+                "🟢",Patch('Rounding Details',RecordItem,{'Last Check-in':Now(),'Sentiment Label':"🟢",Sentiment:'Sentiment Code'.'🟢 Green'}));
+            Back()
+        Text: ="Save"
+        Width: =300
+        X: =12
+        Y: =316
+        ZIndex: =2
+
+    Rating1 As Rating:
+        DisplayMode: =DisplayMode.Edit
+        Height: =36
+        OnChange: |-
+            =ClearCollect(surveyResponse,{Rating:Rating1.Value, Why:TextBox1.Value});Set(myjsonpayload,JSON(surveyResponse))
+        Width: =300
+        X: =12
+        Y: =122
+        ZIndex: =6
+
+    Label1_1 As Label:
+        DisplayMode: =DisplayMode.Edit
+        FontWeight: =FontWeight.Bold
+        Height: =32
+        Text: |-
+            ="Patient Name: "&RecordItem.Patient.'Full Name'
+        Width: =300
+        X: =12
+        Y: =44
+        ZIndex: =7
+
+    "TextBox1 As 'Text box'":
+        DisplayMode: =DisplayMode.Edit
+        Height: =90
+        Mode: ='''Microsoft.CoreControls.TextBox.Mode'''.Multiline
+        OnChange: |-
+            =ClearCollect(surveyResponse,{Rating:Rating1.Value, Why:TextBox1.Value});Set(myjsonpayload,JSON(surveyResponse))
+        Placeholder: ="Any details on why?"
+        Value: =""
+        Width: =300
+        X: =12
+        Y: =176
+        ZIndex: =8
+
+    Label1_2 As Label:
+        DisplayMode: =DisplayMode.Edit
+        Height: =32
+        Text: ="How are things?"
+        Width: =200
+        X: =12
+        Y: =83
+        ZIndex: =9
+
+    ResultsJson As Label:
+        DisplayMode: =DisplayMode.Edit
+        Height: =32
+        Text: =myjsonpayload
+        Visible: =false
+        Width: =300
+        X: =12
+        Y: =284
+        ZIndex: =10
+
+    Label2 As Label:
+        Alignment: =Align.Center
+        DisplayMode: =DisplayMode.Edit
+        FontSize: =12
+        Height: =36
+        Text: |-
+            =Switch(Rating1.Value,
+                1,"🔴",
+                2,"🟡",
+                3,"🟡",
+                4,"🟢",
+                5,"🟢")
+        Width: =43
+        X: =269
+        Y: =122
+        ZIndex: =11
+

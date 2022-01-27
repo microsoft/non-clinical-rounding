@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{9c476640-3367-ec11-8f8f-000d3a1514b7}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab id="ACBA75B7-97B6-4116-AA55-51312992B721" name="tab_1" showlabel="false" labelid="{283d62f1-0486-438c-8002-6f937de0a5db}">
+          <labels>
+            <label description="New Tab" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section id="AD49B5BF-256F-46A8-9C75-947146172EB9" name="tab_1_column_1_section_1" columns="1" showlabel="true" showbar="false" IsUserDefined="0" labelwidth="130" labelid="{127a60d7-72c1-45e4-923b-1ae05acc0443}">
+                  <labels>
+                    <label description="Demographics" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{7b815c3f-b483-4521-8650-77cc54d931b3}" locklevel="0" colspan="1" rowspan="1" labelid="{3923deac-7fcf-434a-9a1b-a0731652aeb3}">
+                        <labels>
+                          <label description="Full Name" languagecode="1033" />
+                        </labels>
+                        <control id="fullname" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="fullname" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d4b1f4c9-1230-4e9c-a37c-0a3219445fd1}" locklevel="0" colspan="1" rowspan="1" labelid="{ab341df5-f93e-4e1b-b353-fd28aa58519b}">
+                        <labels>
+                          <label description="Date of Birth" languagecode="1033" />
+                        </labels>
+                        <control id="birthdate" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="birthdate" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="tab_1_section_3" id="0ea852ec-8870-4ce9-b217-2c12c1c203b5" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Preferences" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{83c6e638-90f1-42b5-b3c9-d9dbd37808f3}" locklevel="0" colspan="1" rowspan="3">
+                        <labels>
+                          <label description="General Preferences" languagecode="1033" />
+                        </labels>
+                        <control id="description" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="description" disabled="false" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row>
+                      <cell id="{24cdcbd1-6e82-440c-8ba1-7cbdf6644944}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Primary Language" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_communication1language" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_communication1language" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ae64976c-4736-4cb3-b4bb-6ee1552cd5b2}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Secondary Language" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_communication2language" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_communication2language" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{21db50a4-12ed-4242-83d0-0fcbe9c4b63b}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Secondary Language Preferred" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_communication2preferred" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="msemr_communication2preferred" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <DisplayConditions Order="13" FallbackForm="true">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Patient Rounds QV" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

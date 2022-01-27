@@ -1,0 +1,808 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ImportExportXml version="9.2.21114.136" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SolutionManifest>
+    <UniqueName>NonClinicalRounding</UniqueName>
+    <LocalizedNames>
+      <LocalizedName description="Non-Clinical Rounding" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions />
+    <Version>1.0.5.0</Version>
+    <Managed>0</Managed>
+    <Publisher>
+      <UniqueName>HealthcareAcceleration</UniqueName>
+      <LocalizedNames>
+        <LocalizedName description="Healthcare Acceleration" languagecode="1033" />
+      </LocalizedNames>
+      <Descriptions />
+      <EMailAddress xsi:nil="true"></EMailAddress>
+      <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
+      <CustomizationPrefix>hsa</CustomizationPrefix>
+      <CustomizationOptionValuePrefix>12300</CustomizationOptionValuePrefix>
+      <Addresses>
+        <Address>
+          <AddressNumber>1</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+        <Address>
+          <AddressNumber>2</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+      </Addresses>
+    </Publisher>
+    <RootComponents>
+      <RootComponent type="1" schemaName="contact" behavior="1" />
+      <RootComponent type="1" schemaName="hsa_roundingdetail" behavior="0" />
+      <RootComponent type="1" schemaName="hsa_roundingsession" behavior="0" />
+      <RootComponent type="1" schemaName="msemr_encounter" behavior="2" />
+      <RootComponent type="1" schemaName="msemr_location" behavior="2" />
+      <RootComponent type="9" schemaName="hsa_sentimentcode" behavior="0" />
+      <RootComponent type="20" id="{46572b36-bf68-ec11-8943-00224827e90f}" behavior="0" />
+      <RootComponent type="20" id="{f0b4448a-c068-ec11-8943-00224827e90f}" behavior="0" />
+      <RootComponent type="29" id="{9794b6a0-0568-ec11-8f8f-000d3a1514b7}" behavior="0" />
+      <RootComponent type="61" schemaName="hsa_/scripts/rounding_commands.js" behavior="0" />
+      <RootComponent type="62" schemaName="hsa_NonClinicalRounding" behavior="0" />
+      <RootComponent type="80" schemaName="hsa_NonClinicalRounding" behavior="0" />
+      <RootComponent type="300" schemaName="hsa_nonclinicalroundingdefaultcommandlibrary_ad7bb" behavior="0" />
+      <RootComponent type="300" schemaName="hsa_roundinghistory_ade7d" behavior="0" />
+      <RootComponent type="300" schemaName="hsa_roundingmapsample_1edbf" behavior="0" />
+      <RootComponent type="300" schemaName="hsa_roundingsession_35171" behavior="0" />
+      <RootComponent type="300" schemaName="hsa_servicerequest_6e020" behavior="0" />
+    </RootComponents>
+    <MissingDependencies>
+      <MissingDependency>
+        <Required type="1" schemaName="msemr_careplan" displayName="Care Plan" solution="FHIRCommonCore (3.0.3.1)">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msemr_careplanactivity" displayName="Care Plan Activity" solution="FHIRClinicalCareTeam (3.0.3.1)">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msemr_careteam" displayName="Care Team" solution="FHIRCommonCore (3.0.3.1)">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msemr_contactlink" displayName="Link" solution="FHIRAdministrationCore (3.0.3.1)">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msemr_encounter" displayName="Encounter" solution="FHIRCommonCore (3.0.3.1)">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="1" schemaName="msemr_encounter" displayName="Encounter" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msemr_location" displayName="Location" solution="FHIRCommonCore (3.0.3.1)">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="1" schemaName="msemr_location" displayName="Location" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msemr_location" displayName="Location" solution="FHIRCommonCore (3.0.3.1)">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="10" schemaName="hsa_RoundingDetail_location_location" displayName="hsa_RoundingDetail_location_location" parentSchemaName="msemr_location" parentDisplayName="Location" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msemr_location" displayName="Location" solution="FHIRCommonCore (3.0.3.1)">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="10" schemaName="hsa_RoundingSession_location" displayName="hsa_RoundingSession_location" parentSchemaName="msemr_location" parentDisplayName="Location" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msemr_location" displayName="Location" solution="FHIRCommonCore (3.0.3.1)">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="300" schemaName="hsa_roundingsession_35171" displayName="Rounding Session" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msemr_location" displayName="Location" solution="FHIRCommonCore (3.0.3.1)">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="300" schemaName="hsa_servicerequest_6e020" displayName="Service Request" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msemr_medicalidentifier" displayName="Medical Identifier" solution="FHIRMedicationCore (3.0.3.1)">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msemr_relatedperson" displayName="Related Person" solution="FHIRCommonCore (3.0.3.1)">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msemr_contact_contact_GeneralPractioner" displayName="msemr_contact_contact_GeneralPractioner" parentSchemaName="contact" parentDisplayName="Contact" solution="FHIRAdministrationCore (3.0.3.1)">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msemr_contact_msemr_Gender_msemr_codeable" displayName="msemr_contact_msemr_Gender_msemr_codeable" parentSchemaName="contact" parentDisplayName="Contact" solution="HealthcareFoundation (3.0.3.1)">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msemr_msemr_codeableconcept_contact_Communication1Language" displayName="msemr_msemr_codeableconcept_contact_Communication1Language" parentSchemaName="contact" parentDisplayName="Contact" solution="FHIRAdministrationCore (3.0.3.1)">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient Rounds QV" parentDisplayName="Contact" id="{9c476640-3367-ec11-8f8f-000d3a1514b7}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msemr_msemr_codeableconcept_contact_Communication2Language" displayName="msemr_msemr_codeableconcept_contact_Communication2Language" parentSchemaName="contact" parentDisplayName="Contact" solution="FHIRAdministrationCore (3.0.3.1)">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient Rounds QV" parentDisplayName="Contact" id="{9c476640-3367-ec11-8f8f-000d3a1514b7}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msemr_contact_msemr_allergyintolerance_Patient" displayName="msemr_contact_msemr_allergyintolerance_Patient" parentSchemaName="msemr_allergyintolerance" parentDisplayName="Allergy Intolerance" solution="FHIRClinicalCore (3.0.3.1)">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msemr_contact_msemr_appointmentemr_ActorPatient" displayName="msemr_contact_msemr_appointmentemr_ActorPatient" parentSchemaName="msemr_appointmentemr" parentDisplayName="Appointment (EMR)" solution="FHIRCommonCore (3.0.3.1)">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msemr_contact_msemr_careplan_PatientIdentifier" displayName="msemr_contact_msemr_careplan_PatientIdentifier" parentSchemaName="msemr_careplan" parentDisplayName="Care Plan" solution="FHIRCommonCore (3.0.3.1)">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msemr_careplanactivity_Patient_Contact" displayName="msemr_careplanactivity_Patient_Contact" parentSchemaName="msemr_careplanactivity" parentDisplayName="Care Plan Activity" solution="HealthcareFoundation (3.0.3.1)">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msemr_careplanactivitygoal_Patient_Contac" displayName="msemr_careplanactivitygoal_Patient_Contac" parentSchemaName="msemr_careplanactivitygoal" parentDisplayName="Care Plan Activity Goal" solution="HealthcareFoundation (3.0.3.1)">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msemr_contact_msemr_careteam_SubjectPatient" displayName="msemr_contact_msemr_careteam_SubjectPatient" parentSchemaName="msemr_careteam" parentDisplayName="Care Team" solution="FHIRCommonCore (3.0.3.1)">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msemr_Claim_ProviderPractitioner_Contact" displayName="msemr_Claim_ProviderPractitioner_Contact" parentSchemaName="msemr_claim" parentDisplayName="Claim" solution="FHIRFinancial (3.0.3.1)">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msemr_contact_msemr_condition_SubjectTypePatient" displayName="msemr_contact_msemr_condition_SubjectTypePatient" parentSchemaName="msemr_condition" parentDisplayName="Condition" solution="FHIRCommonCore (3.0.3.1)">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msemr_Coverage_SubscriberRelatedPerson_Co" displayName="msemr_Coverage_SubscriberRelatedPerson_Co" parentSchemaName="msemr_coverage" parentDisplayName="Coverage" solution="FHIRFinancial (3.0.3.1)">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msemr_contact_msemr_encounter_SubjectPatient" displayName="msemr_contact_msemr_encounter_SubjectPatient" parentSchemaName="msemr_encounter" parentDisplayName="Encounter" solution="FHIRCommonCore (3.0.3.1)">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msemr_contact_msemr_medicalidentifier_Assignee" displayName="msemr_contact_msemr_medicalidentifier_Assignee" parentSchemaName="msemr_medicalidentifier" parentDisplayName="Medical Identifier" solution="FHIRMedicationCore (3.0.3.1)">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msemr_contact_msemr_medicationrequest_SubjectTypePatient" displayName="msemr_contact_msemr_medicationrequest_SubjectTypePatient" parentSchemaName="msemr_medicationrequest" parentDisplayName="Medication Request" solution="FHIRCommonCore (3.0.3.1)">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msemr_contact_msemr_procedure_Patient" displayName="msemr_contact_msemr_procedure_Patient" parentSchemaName="msemr_procedure" parentDisplayName="Procedure" solution="FHIRCommonCore (3.0.3.1)">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msemr_contact_msemr_referralrequest_RequesterAgentPatient" displayName="msemr_contact_msemr_referralrequest_RequesterAgentPatient" parentSchemaName="msemr_referralrequest" parentDisplayName="Referral Request" solution="FHIRCommonCore (3.0.3.1)">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msemr_contact_msemr_relatedperson_Patient" displayName="msemr_contact_msemr_relatedperson_Patient" parentSchemaName="msemr_relatedperson" parentDisplayName="Related Person" solution="FHIRCommonCore (3.0.3.1)">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msemr_communication1language" displayName="Primary Language" parentSchemaName="contact" parentDisplayName="Contact" solution="FHIRAdministrationCore (3.0.3.1)">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient Rounds QV" parentDisplayName="Contact" id="{9c476640-3367-ec11-8f8f-000d3a1514b7}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msemr_communication2language" displayName="Secondary Language" parentSchemaName="contact" parentDisplayName="Contact" solution="FHIRAdministrationCore (3.0.3.1)">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient Rounds QV" parentDisplayName="Contact" id="{9c476640-3367-ec11-8f8f-000d3a1514b7}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msemr_communication2preferred" displayName="Secondary Language Preferred" parentSchemaName="contact" parentDisplayName="Contact" solution="FHIRAdministrationCore (3.0.3.1)">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient Rounds QV" parentDisplayName="Contact" id="{9c476640-3367-ec11-8f8f-000d3a1514b7}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msemr_contacttype" displayName="Contact Type" parentSchemaName="contact" parentDisplayName="Contact" solution="FHIRAdministrationCore (3.0.3.1)">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msemr_gender" displayName="Gender" parentSchemaName="contact" parentDisplayName="Contact" solution="HealthcareFoundation (3.0.3.1)">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msemr_generalpractioner" displayName="Primary Practitioner" parentSchemaName="contact" parentDisplayName="Contact" solution="FHIRAdministrationCore (3.0.3.1)">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msemr_encounterid" displayName="Encounter" parentSchemaName="msemr_encounter" parentDisplayName="Encounter" solution="FHIRCommonCore (3.0.3.1)">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="10" schemaName="hsa_RoundingDetail_encounter" displayName="hsa_RoundingDetail_encounter" parentSchemaName="msemr_encounter" parentDisplayName="Encounter" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msemr_encounterid" displayName="Encounter" parentSchemaName="msemr_encounter" parentDisplayName="Encounter" solution="FHIRCommonCore (3.0.3.1)">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="10" schemaName="hsa_RoundingSession_encounter" displayName="hsa_RoundingSession_encounter" parentSchemaName="msemr_encounter" parentDisplayName="Encounter" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msemr_name" displayName="Encounter Name" parentSchemaName="msemr_encounter" parentDisplayName="Encounter" solution="FHIRCommonCore (3.0.3.1)">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="10" schemaName="hsa_RoundingDetail_encounter" displayName="hsa_RoundingDetail_encounter" parentSchemaName="msemr_encounter" parentDisplayName="Encounter" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msemr_name" displayName="Encounter Name" parentSchemaName="msemr_encounter" parentDisplayName="Encounter" solution="FHIRCommonCore (3.0.3.1)">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="10" schemaName="hsa_RoundingSession_encounter" displayName="hsa_RoundingSession_encounter" parentSchemaName="msemr_encounter" parentDisplayName="Encounter" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msemr_locationid" displayName="Location" parentSchemaName="msemr_location" parentDisplayName="Location" solution="FHIRCommonCore (3.0.3.1)">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="10" schemaName="hsa_RoundingDetail_location_location" displayName="hsa_RoundingDetail_location_location" parentSchemaName="msemr_location" parentDisplayName="Location" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msemr_locationid" displayName="Location" parentSchemaName="msemr_location" parentDisplayName="Location" solution="FHIRCommonCore (3.0.3.1)">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="10" schemaName="hsa_RoundingSession_location" displayName="hsa_RoundingSession_location" parentSchemaName="msemr_location" parentDisplayName="Location" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msemr_name" displayName="Name" parentSchemaName="msemr_location" parentDisplayName="Location" solution="FHIRCommonCore (3.0.3.1)">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="10" schemaName="hsa_RoundingDetail_location_location" displayName="hsa_RoundingDetail_location_location" parentSchemaName="msemr_location" parentDisplayName="Location" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msemr_name" displayName="Name" parentSchemaName="msemr_location" parentDisplayName="Location" solution="FHIRCommonCore (3.0.3.1)">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="10" schemaName="hsa_RoundingSession_location" displayName="hsa_RoundingSession_location" parentSchemaName="msemr_location" parentDisplayName="Location" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Active Care Teams" displayName="Active Care Teams" parentSchemaName="msemr_careteam" parentDisplayName="Care Team" solution="FHIRCommonCore (3.0.3.1)" id="{059801ab-c2a7-4677-9360-8a19ae2d507a}">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Observation Data Absent Reason Codeable Concepts" displayName="Observation Data Absent Reason Codeable Concepts" parentSchemaName="msemr_codeableconcept" parentDisplayName="Codeable Concept" solution="HealthcareFoundation (3.0.3.1)" id="{0793ba88-f508-eb11-a813-000d3a31c867}">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Active Related Person Patient Form View" displayName="Active Related Person Patient Form View" parentSchemaName="msemr_relatedperson" parentDisplayName="Related Person" solution="HealthcareFoundation (3.0.3.1)" id="{0b9ad38c-1cee-ea11-a817-000d3a8ddfb2}">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Medication Code Codeable Concepts" displayName="Medication Code Codeable Concepts" parentSchemaName="msemr_codeableconcept" parentDisplayName="Codeable Concept" solution="HealthcareFoundation (3.0.3.1)" id="{0cc371c6-9202-eb11-a813-000d3a31c867}">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Referral Request Type Codeable Concepts" displayName="Referral Request Type Codeable Concepts" parentSchemaName="msemr_codeableconcept" parentDisplayName="Codeable Concept" solution="HealthcareFoundation (3.0.3.1)" id="{10866707-bd09-eb11-a813-000d3a31c867}">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Discharge Disposition Codeable Concepts" displayName="Discharge Disposition Codeable Concepts" parentSchemaName="msemr_codeableconcept" parentDisplayName="Codeable Concept" solution="HealthcareFoundation (3.0.3.1)" id="{1b00f53d-9102-eb11-a813-000d3a31c867}">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Condition Code Codeable Concepts" displayName="Condition Code Codeable Concepts" parentSchemaName="msemr_codeableconcept" parentDisplayName="Codeable Concept" solution="HealthcareFoundation (3.0.3.1)" id="{1f7f01c6-91ff-ea11-a815-000d3a31cb42}">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Medical Identifiers" displayName="Medical Identifiers" parentSchemaName="msemr_medicalidentifier" parentDisplayName="Medical Identifier" solution="HealthcareFoundation (3.0.3.1)" id="{2159aeb1-aac4-eb11-bacc-0022481f15b5}">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Procedure Category Code Codeable Concepts" displayName="Procedure Category Code Codeable Concepts" parentSchemaName="msemr_codeableconcept" parentDisplayName="Codeable Concept" solution="HealthcareFoundation (3.0.3.1)" id="{2a987cb0-f808-eb11-a813-000d3a31c867}">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Care Plan Activity Code Codeable Concepts" displayName="Care Plan Activity Code Codeable Concepts" parentSchemaName="msemr_codeableconcept" parentDisplayName="Codeable Concept" solution="HealthcareFoundation (3.0.3.1)" id="{313e5cfc-fb08-eb11-a813-000d3a31c867}">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Inactive Codeable Concepts" displayName="Inactive Codeable Concepts" parentSchemaName="msemr_codeableconcept" parentDisplayName="Codeable Concept" solution="FHIRCommonCore (3.0.3.1)" id="{32d456e5-3785-4c27-990d-f78aca3482b5}">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Ratio Denominator Code Codeable Concepts" displayName="Ratio Denominator Code Codeable Concepts" parentSchemaName="msemr_codeableconcept" parentDisplayName="Codeable Concept" solution="HealthcareFoundation (3.0.3.1)" id="{33e193a0-f408-eb11-a813-000d3a31c867}">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Codeable Concept Lookup View" displayName="Codeable Concept Lookup View" parentSchemaName="msemr_codeableconcept" parentDisplayName="Codeable Concept" solution="FHIRCommonCore (3.0.3.1)" id="{3a86647a-0e22-4705-927b-6fd7ac819c70}">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Active Related Persons" displayName="Active Related Persons" parentSchemaName="msemr_relatedperson" parentDisplayName="Related Person" solution="FHIRCommonCore (3.0.3.1)" id="{3bac0053-80d8-41e6-9bcb-020ac5a471ba}">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Task Reason Codeable Concepts" displayName="Task Reason Codeable Concepts" parentSchemaName="msemr_codeableconcept" parentDisplayName="Codeable Concept" solution="HealthcareFoundation (3.0.3.1)" id="{3d329ecc-fa08-eb11-a813-000d3a31c867}">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Active Care Plan Activities" displayName="Active Care Plan Activities" parentSchemaName="msemr_careplanactivity" parentDisplayName="Care Plan Activity" solution="FHIRClinicalCareTeam (3.0.3.1)" id="{3e1b704b-62dd-41d2-8b15-74cfb0ef9402}">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Active Practitioners" displayName="Active Practitioners" parentSchemaName="contact" parentDisplayName="Contact" solution="HealthcareFoundation (3.0.3.1)" id="{4398634c-3ef4-ea11-a815-000d3a5bf119}">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Active Codeable Concepts" displayName="Active Codeable Concepts" parentSchemaName="msemr_codeableconcept" parentDisplayName="Codeable Concept" solution="FHIRCommonCore (3.0.3.1)" id="{44c3752b-686f-4a4f-8078-2ff83304f8d4}">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Condition Category Codes Codeable Concepts" displayName="Condition Category Codes Codeable Concepts" parentSchemaName="msemr_codeableconcept" parentDisplayName="Codeable Concept" solution="HealthcareFoundation (3.0.3.1)" id="{4f710f1c-eb08-eb11-a813-000d3a31c867}">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Patient Contact Links" displayName="Patient Contact Links" parentSchemaName="msemr_contactlink" parentDisplayName="Link" solution="HealthcareFoundation (3.0.3.1)" id="{54bc06b2-ffc7-eb11-bacc-000d3a9b6dc6}">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Active Care Plan Activity Patient Form" displayName="Active Care Plan Activity Patient Form" parentSchemaName="msemr_careplanactivity" parentDisplayName="Care Plan Activity" solution="HealthcareFoundation (3.0.3.1)" id="{5d20b81e-1eee-ea11-a817-000d3a8ddfb2}">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Body Structure Codeable Concepts" displayName="Body Structure Codeable Concepts" parentSchemaName="msemr_codeableconcept" parentDisplayName="Codeable Concept" solution="HealthcareFoundation (3.0.3.1)" id="{61796753-f308-eb11-a813-000d3a31cb42}">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Questionnaire Codeable Concepts" displayName="Questionnaire Codeable Concepts" parentSchemaName="msemr_codeableconcept" parentDisplayName="Codeable Concept" solution="HealthcareFoundation (3.0.3.1)" id="{65c00371-90ff-ea11-a815-000d3a31cb42}">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Admit Source Codeable Concepts" displayName="Admit Source Codeable Concepts" parentSchemaName="msemr_codeableconcept" parentDisplayName="Codeable Concept" solution="HealthcareFoundation (3.0.3.1)" id="{67b8d902-9202-eb11-a813-000d3a31c867}">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Substance Admin Substituion Reason Codeable Concepts" displayName="Substance Admin Substituion Reason Codeable Concepts" parentSchemaName="msemr_codeableconcept" parentDisplayName="Codeable Concept" solution="HealthcareFoundation (3.0.3.1)" id="{6c31cebc-f208-eb11-a813-000d3a31cb42}">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Appointment Reason Code Codeable Concepts" displayName="Appointment Reason Code Codeable Concepts" parentSchemaName="msemr_codeableconcept" parentDisplayName="Codeable Concept" solution="HealthcareFoundation (3.0.3.1)" id="{7672d55d-b908-eb11-a813-000d3a31c867}">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Task Business Status Codeable Concepts" displayName="Task Business Status Codeable Concepts" parentSchemaName="msemr_codeableconcept" parentDisplayName="Codeable Concept" solution="HealthcareFoundation (3.0.3.1)" id="{78ce3f60-fa08-eb11-a813-000d3a31c867}">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Set Service Delivery Location Role Type Codeable Concepts" displayName="Set Service Delivery Location Role Type Codeable Concepts" parentSchemaName="msemr_codeableconcept" parentDisplayName="Codeable Concept" solution="HealthcareFoundation (3.0.3.1)" id="{81532907-ee08-eb11-a813-000d3a31cb42}">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Observation Value Code Codeable Concepts" displayName="Observation Value Code Codeable Concepts" parentSchemaName="msemr_codeableconcept" parentDisplayName="Codeable Concept" solution="HealthcareFoundation (3.0.3.1)" id="{83f48e7c-f608-eb11-a813-000d3a31c867}">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Subscriber Policyholder Relationship Codes Codeable Concepts" displayName="Subscriber Policyholder Relationship Codes Codeable Concepts" parentSchemaName="msemr_codeableconcept" parentDisplayName="Codeable Concept" solution="HealthcareFoundation (3.0.3.1)" id="{8de552b1-ec08-eb11-a813-000d3a31cb42}">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Claim Type Codes Codeable Concepts" displayName="Claim Type Codes Codeable Concepts" parentSchemaName="msemr_codeableconcept" parentDisplayName="Codeable Concept" solution="HealthcareFoundation (3.0.3.1)" id="{95133349-ea08-eb11-a813-000d3a31c867}">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Claim Accident Type Codeable Concepts" displayName="Claim Accident Type Codeable Concepts" parentSchemaName="msemr_codeableconcept" parentDisplayName="Codeable Concept" solution="HealthcareFoundation (3.0.3.1)" id="{95b1ff79-e908-eb11-a813-000d3a31c867}">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Care Plan Activity Category Codeable Concepts" displayName="Care Plan Activity Category Codeable Concepts" parentSchemaName="msemr_codeableconcept" parentDisplayName="Codeable Concept" solution="HealthcareFoundation (3.0.3.1)" id="{9d00024b-fb08-eb11-a813-000d3a31c867}">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Value Quantity Code Codeable Concepts" displayName="Value Quantity Code Codeable Concepts" parentSchemaName="msemr_codeableconcept" parentDisplayName="Codeable Concept" solution="HealthcareFoundation (3.0.3.1)" id="{9d798439-f408-eb11-a813-000d3a31c867}">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Re-Admission Indicator Codeable Concepts" displayName="Re-Admission Indicator Codeable Concepts" parentSchemaName="msemr_codeableconcept" parentDisplayName="Codeable Concept" solution="HealthcareFoundation (3.0.3.1)" id="{9fdbde94-9102-eb11-a813-000d3a31c867}">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Language Codeable Concepts" displayName="Language Codeable Concepts" parentSchemaName="msemr_codeableconcept" parentDisplayName="Codeable Concept" solution="HealthcareFoundation (3.0.3.1)" id="{a4fb91d1-8eff-ea11-a815-000d3a31cb42}">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Location Type Codeable Concepts" displayName="Location Type Codeable Concepts" parentSchemaName="msemr_codeableconcept" parentDisplayName="Codeable Concept" solution="HealthcareFoundation (3.0.3.1)" id="{a650d692-ed08-eb11-a813-000d3a31cb42}">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Group Codeable Concepts" displayName="Group Codeable Concepts" parentSchemaName="msemr_codeableconcept" parentDisplayName="Codeable Concept" solution="HealthcareFoundation (3.0.3.1)" id="{aa16d509-90ff-ea11-a815-000d3a31cb42}">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Active Care Plans" displayName="Active Care Plans" parentSchemaName="msemr_careplan" parentDisplayName="Care Plan" solution="FHIRCommonCore (3.0.3.1)" id="{ac2f655b-09cb-4c6e-bf1a-6156b5ac0e29}">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Participant Type Codeable Concepts" displayName="Participant Type Codeable Concepts" parentSchemaName="msemr_codeableconcept" parentDisplayName="Codeable Concept" solution="HealthcareFoundation (3.0.3.1)" id="{af8efcba-8fff-ea11-a815-000d3a31cb42}">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Observation Method Codeable Concepts" displayName="Observation Method Codeable Concepts" parentSchemaName="msemr_codeableconcept" parentDisplayName="Codeable Concept" solution="HealthcareFoundation (3.0.3.1)" id="{b2dc40dd-f408-eb11-a813-000d3a31c867}">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Administrative Gender Codeable Concepts" displayName="Administrative Gender Codeable Concepts" parentSchemaName="msemr_codeableconcept" parentDisplayName="Codeable Concept" solution="HealthcareFoundation (3.0.3.1)" id="{c0e000bb-3229-eb11-a813-000d3a31c867}">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Practitioner Specialty Codeable Concepts" displayName="Practitioner Specialty Codeable Concepts" parentSchemaName="msemr_codeableconcept" parentDisplayName="Codeable Concept" solution="HealthcareFoundation (3.0.3.1)" id="{c74476e8-9402-eb11-a813-000d3a31c867}">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Condition/Diagnosis Severity Codeable Concepts" displayName="Condition/Diagnosis Severity Codeable Concepts" parentSchemaName="msemr_codeableconcept" parentDisplayName="Codeable Concept" solution="HealthcareFoundation (3.0.3.1)" id="{cc0b5cd1-eb08-eb11-a813-000d3a31cb42}">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Medication Request Category Codeable Concepts" displayName="Medication Request Category Codeable Concepts" parentSchemaName="msemr_codeableconcept" parentDisplayName="Codeable Concept" solution="HealthcareFoundation (3.0.3.1)" id="{ce41f778-f208-eb11-a813-000d3a31cb42}">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Priority Codeable Concepts" displayName="Priority Codeable Concepts" parentSchemaName="msemr_codeableconcept" parentDisplayName="Codeable Concept" solution="HealthcareFoundation (3.0.3.1)" id="{d73730fe-90ff-ea11-a815-000d3a31cb42}">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Procedure Code Codeable Concepts" displayName="Procedure Code Codeable Concepts" parentSchemaName="msemr_codeableconcept" parentDisplayName="Codeable Concept" solution="HealthcareFoundation (3.0.3.1)" id="{dd8ce5f3-f808-eb11-a813-000d3a31c867}">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Observation Interpretation Codes Codeable Concepts" displayName="Observation Interpretation Codes Codeable Concepts" parentSchemaName="msemr_codeableconcept" parentDisplayName="Codeable Concept" solution="HealthcareFoundation (3.0.3.1)" id="{ddfb5122-f508-eb11-a813-000d3a31c867}">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Service Category Codeable Concepts" displayName="Service Category Codeable Concepts" parentSchemaName="msemr_codeableconcept" parentDisplayName="Codeable Concept" solution="HealthcareFoundation (3.0.3.1)" id="{e1715bbe-5cff-ea11-a815-000d3a31c867}">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Product Codeable Concepts" displayName="Product Codeable Concepts" parentSchemaName="msemr_codeableconcept" parentDisplayName="Codeable Concept" solution="HealthcareFoundation (3.0.3.1)" id="{e2654ec3-db08-eb11-a813-000d3a31cb42}">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Active Medical Identifiers" displayName="Active Medical Identifiers" parentSchemaName="msemr_medicalidentifier" parentDisplayName="Medical Identifier" solution="FHIRMedicationCore (3.0.3.1)" id="{e365b8ac-7e06-4375-83d5-ea3e0d743983}">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Payee Type Codeable Concepts" displayName="Payee Type Codeable Concepts" parentSchemaName="msemr_codeableconcept" parentDisplayName="Codeable Concept" solution="HealthcareFoundation (3.0.3.1)" id="{eb101680-e108-eb11-a813-000d3a31cb42}">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Form Code Codeable Concepts" displayName="Form Code Codeable Concepts" parentSchemaName="msemr_codeableconcept" parentDisplayName="Codeable Concept" solution="HealthcareFoundation (3.0.3.1)" id="{efb9331c-f208-eb11-a813-000d3a31cb42}">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Task Status Reason Codeable Concepts" displayName="Task Status Reason Codeable Concepts" parentSchemaName="msemr_codeableconcept" parentDisplayName="Codeable Concept" solution="HealthcareFoundation (3.0.3.1)" id="{f034169c-fa08-eb11-a813-000d3a31c867}">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Procedure Outcome Code Codeable Concepts" displayName="Procedure Outcome Code Codeable Concepts" parentSchemaName="msemr_codeableconcept" parentDisplayName="Codeable Concept" solution="HealthcareFoundation (3.0.3.1)" id="{f2230236-f808-eb11-a813-000d3a31c867}">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Condition Stage Codeable Concepts" displayName="Condition Stage Codeable Concepts" parentSchemaName="msemr_codeableconcept" parentDisplayName="Codeable Concept" solution="HealthcareFoundation (3.0.3.1)" id="{f2f47844-ec08-eb11-a813-000d3a31cb42}">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Coverage Type and Self-Pay Codes Codeable Concepts" displayName="Coverage Type and Self-Pay Codes Codeable Concepts" parentSchemaName="msemr_codeableconcept" parentDisplayName="Codeable Concept" solution="HealthcareFoundation (3.0.3.1)" id="{f76dadf4-ec08-eb11-a813-000d3a31cb42}">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Task Code Codeable Concepts" displayName="Task Code Codeable Concepts" parentSchemaName="msemr_codeableconcept" parentDisplayName="Codeable Concept" solution="HealthcareFoundation (3.0.3.1)" id="{f93eff2f-fa08-eb11-a813-000d3a31c867}">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Observation Code Codeable Concepts" displayName="Observation Code Codeable Concepts" parentSchemaName="msemr_codeableconcept" parentDisplayName="Codeable Concept" solution="HealthcareFoundation (3.0.3.1)" id="{fa4f53b6-f308-eb11-a813-000d3a31cb42}">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Procedure Reason Code Codeable Concepts" displayName="Procedure Reason Code Codeable Concepts" parentSchemaName="msemr_codeableconcept" parentDisplayName="Codeable Concept" solution="HealthcareFoundation (3.0.3.1)" id="{fd43f160-f808-eb11-a813-000d3a31c867}">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="59" schemaName="Activities by Activity Status Pie Chart" displayName="Activities by Activity Status Pie Chart" parentSchemaName="msemr_careplanactivity" parentDisplayName="Care Plan Activity" solution="HealthcareFoundation (3.0.3.1)" id="{24a16d33-73e8-ea11-a817-000d3a8ddfb2}">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
+        <Dependent type="80" schemaName="hsa_NonClinicalRounding" displayName="Non-Clinical Rounding" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msemr_/Icons/CarePlanActivity.SVG" displayName="msemr_/Icons/CarePlanActivity.SVG" solution="FHIRClinicalCareTeam (3.0.3.1)">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="62" schemaName="hsa_NonClinicalRounding" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msemr_/Icons/ClinicAppointment.SVG" displayName="msemr_/Icons/ClinicAppointment.SVG" solution="HealthcareFoundation (3.0.3.1)">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="62" schemaName="hsa_NonClinicalRounding" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msemr_/Icons/Encounters.SVG" displayName="msemr_/Icons/Encounters.SVG" solution="FHIRCommonCore (3.0.3.1)">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="1" schemaName="msemr_encounter" displayName="Encounter" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msemr_/Scripts/Entities/contact.js" displayName="msemr_/Scripts/Entities/contact.js" solution="HealthcareFoundation (3.0.3.1)">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msemr_/Scripts/Entities/PatientLinks.js" displayName="msemr_/Scripts/Entities/PatientLinks.js" solution="HealthcareFoundation (3.0.3.1)">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msemr_/Scripts/Utilities/msemr_controlFormSelectorVisibility.js" displayName="msemr_/Scripts/Utilities/msemr_controlFormSelectorVisibility.js" solution="HealthcareFoundation (3.0.3.1)">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="MscrmControls.Canvas.CanvasControl" displayName="MscrmControls.Canvas.CanvasControl" solution="BaseCustomControlsCore (9.0.2111.4011)" />
+        <Dependent type="60" displayName="Rounding Form" parentDisplayName="Rounding Detail" id="{1f9c8213-c754-488c-ab49-46e730b2fa03}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="MscrmControls.CardFeedContainer.CardFeedContainer" displayName="MscrmControls.CardFeedContainer.CardFeedContainer" solution="BaseCustomControlsCore (9.0.2111.4011)" />
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="MscrmControls.Grid.GridControl" displayName="MscrmControls.Grid.GridControl" solution="BaseCustomControlsCore (9.0.2111.4011)" />
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="msemr_HealthcareAccelerator.CarePlanControl" displayName="msemr_HealthcareAccelerator.CarePlanControl" solution="HealthcareControls (3.0.3.1)">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="msemr_Microsoft.PCF.CareTeamCollaborationControl" displayName="msemr_Microsoft.PCF.CareTeamCollaborationControl" solution="HealthcareControls (3.0.3.1)">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="msemr_Microsoft.PCF.TimelineGantt" displayName="msemr_Microsoft.PCF.TimelineGantt" solution="HealthcareControls (3.0.3.1)">
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="60" displayName="Patient - Non-Clinical Rounds" parentDisplayName="Contact" id="{26fc806f-c15d-ec11-8f8f-002248283039}" />
+      </MissingDependency>
+    </MissingDependencies>
+  </SolutionManifest>
+</ImportExportXml>

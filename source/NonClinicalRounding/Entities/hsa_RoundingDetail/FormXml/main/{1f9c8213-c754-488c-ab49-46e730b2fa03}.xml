@@ -1,0 +1,389 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{1f9c8213-c754-488c-ab49-46e730b2fa03}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{87d7fb70-8625-443b-b9d7-62bb70ea76b2}" IsUserDefined="1" name="tab_general">
+          <labels>
+            <label description="Details" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="50%">
+              <sections>
+                <section name="null_section_3" id="6d4acb2a-f9d0-4658-b367-6b0d74fa0d1f" IsUserDefined="0" locklevel="0" showlabel="false" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115" visible="true">
+                  <labels>
+                    <label description="Patient" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{89fda2a9-54f7-416c-98a4-73308881b49d}" locklevel="0" colspan="1" rowspan="1" visible="false">
+                        <labels>
+                          <label description="Sentiment" languagecode="1033" />
+                        </labels>
+                        <control id="hsa_sentiment" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="hsa_sentiment" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e800a8c7-ace2-4dc4-a1a3-eb5b66ed50f6}" locklevel="0" colspan="1" rowspan="1" visible="false">
+                        <labels>
+                          <label description="Alert" languagecode="1033" />
+                        </labels>
+                        <control id="hsa_alert" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="hsa_alert" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{be09abde-9471-4450-a677-c4517df8fb5c}" locklevel="0" colspan="1" rowspan="4" showlabel="true">
+                        <labels>
+                          <label description="Active Alert Details" languagecode="1033" />
+                        </labels>
+                        <control id="hsa_alertdetails" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="hsa_alertdetails" disabled="false" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row>
+                      <cell locklevel="0" id="{47635ca9-44d4-49c5-8a9e-44fbea2fad21}" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="New QV control 1640623212839" languagecode="1033" />
+                        </labels>
+                        <control id="PatientDemQVControl1640623212839" classid="{5C5600E0-1D6E-4205-A272-BE80DA87FD42}" datafieldname="hsa_patient" disabled="false">
+                          <parameters>
+                            <DisplayAsCustomer360Tile>false</DisplayAsCustomer360Tile>
+                            <QuickForms>&lt;QuickFormIds&gt;&lt;QuickFormId entityname="contact"&gt;9c476640-3367-ec11-8f8f-000d3a1514b7&lt;/QuickFormId&gt;&lt;/QuickFormIds&gt;</QuickForms>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="50%">
+              <sections>
+                <section name="tab_general_section_4" id="26b452c8-1e0f-4d14-9de4-2105ee30e40e" IsUserDefined="0" locklevel="0" showlabel="false" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Rounding Location Detail" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{5b77a470-e536-4517-a3d7-9868be41b339}" locklevel="0" colspan="1" rowspan="1" showlabel="false">
+                        <labels>
+                          <label description="Title" languagecode="1033" />
+                        </labels>
+                        <control id="hsa_title" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="hsa_title" disabled="false" uniqueid="{05312eb7-4c21-4721-8671-71f1e461f081}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_4" id="b3d4d84b-c3d9-49c1-8264-5db00f87e692" IsUserDefined="0" locklevel="0" showlabel="true">
+          <labels>
+            <label description="Advanced" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="50%">
+              <sections>
+                <section name="tab_4_section_1" id="69bea274-e73a-4e14-9752-f105fa07cde3" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Session History for Encounter" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{7accd515-8fb6-4131-90ba-499951c27f8b}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Encounter" languagecode="1033" />
+                        </labels>
+                        <control id="hsa_encounter" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="hsa_encounter" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{faa9a59b-d295-4457-8ce7-faa659865b9f}" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="New QV control 1640624344009" languagecode="1033" />
+                        </labels>
+                        <control id="QuickviewControl1640624344009" classid="{5C5600E0-1D6E-4205-A272-BE80DA87FD42}" datafieldname="hsa_encounter" disabled="false">
+                          <parameters>
+                            <DisplayAsCustomer360Tile>false</DisplayAsCustomer360Tile>
+                            <QuickForms>&lt;QuickFormIds&gt;&lt;QuickFormId entityname="msemr_encounter"&gt;5534d67f-3567-ec11-8f8f-000d3a1514b7&lt;/QuickFormId&gt;&lt;/QuickFormIds&gt;</QuickForms>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="50%">
+              <sections>
+                <section name="tab_4_section_2" id="bf9474a0-e5db-45d4-a0f7-8696446cda8b" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Session History for Patient (all locations and encounters)" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{6b112bba-73e5-41c2-94d0-abf17bf187ab}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Patient" languagecode="1033" />
+                        </labels>
+                        <control id="hsa_patient" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="hsa_patient" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{3415d4bc-0a64-49ad-bfe1-62c97df412ae}" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="New QV control 1640624584823" languagecode="1033" />
+                        </labels>
+                        <control id="QuickviewControl1640624584823" classid="{5C5600E0-1D6E-4205-A272-BE80DA87FD42}" datafieldname="hsa_patient" disabled="false">
+                          <parameters>
+                            <DisplayAsCustomer360Tile>false</DisplayAsCustomer360Tile>
+                            <QuickForms>&lt;QuickFormIds&gt;&lt;QuickFormId entityname="contact"&gt;d4bc29af-3667-ec11-8f8f-000d3a1514b7&lt;/QuickFormId&gt;&lt;/QuickFormIds&gt;</QuickForms>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_2" id="378dcbeb-aea9-448d-bb88-54c543525061" IsUserDefined="0" locklevel="0" showlabel="true">
+          <labels>
+            <label description="Admin" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{f34a9f1c-61e7-40d3-9484-0749fabcba2a}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{327f9e72-748d-4e19-af76-d5684d5c457f}">
+                        <labels>
+                          <label description="Title" languagecode="1033" />
+                        </labels>
+                        <control id="hsa_title" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="hsa_title" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{46344e29-8c40-4879-9b25-b2ab7f15d5d5}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Alert" languagecode="1033" />
+                        </labels>
+                        <control id="hsa_alert" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="hsa_alert" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{bb286415-b1d8-4cff-9e40-03a2d1771a9d}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Alert Details" languagecode="1033" />
+                        </labels>
+                        <control id="hsa_alertdetails" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="hsa_alertdetails" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{f7c88a50-dbd7-4f6c-9c78-b541d2aaa2f9}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{43683548-c655-4b7c-8181-2ccc9b7ed6c6}" rowspan="1" colspan="1">
+                        <labels>
+                          <label description="History (this patient in this location)" languagecode="1033" />
+                        </labels>
+                        <control id="Subgrid_1" classid="{E7A81278-8635-4D9E-8D4D-59480B391C5B}" indicationOfSubgrid="true">
+                          <parameters>
+                            <TargetEntityType>hsa_roundingsession</TargetEntityType>
+                            <ViewId>{EEAC1036-DAE7-43AA-AD6A-4EDF60C29F2E}</ViewId>
+                            <ViewIds>{EEAC1036-DAE7-43AA-AD6A-4EDF60C29F2E}</ViewIds>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <RelationshipName>hsa_RoundingSession_RoundingDetail</RelationshipName>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="tab_2_section_3" id="a71e9978-e1d0-40d4-8dd1-da9c297aee95" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Related" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{f134d3e2-b86e-4f83-a7d8-fe454328b763}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Patient" languagecode="1033" />
+                        </labels>
+                        <control id="hsa_patient" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="hsa_patient" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b637f62e-2ac6-4df4-a09c-4daae6fc2469}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Encounter" languagecode="1033" />
+                        </labels>
+                        <control id="hsa_encounter" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="hsa_encounter" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a1997b23-b26e-4902-b565-83d88ea10d0e}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Location" languagecode="1033" />
+                        </labels>
+                        <control id="hsa_location" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="hsa_location" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{2f632e74-4cd0-4a86-bcab-eb5915a8dde4}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{a127d62c-fa15-4aab-8619-f17a9e8e85f4}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{e9d7080a-3356-4589-9dff-3e59fba9f211}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{d7626a70-0729-480f-b726-0c1303848eec}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{fb3fae40-6666-46ce-a205-bb595c6fbfae}" locklevel="0" colspan="1" rowspan="1">
+              <labels>
+                <label description="Patient" languagecode="1033" />
+              </labels>
+              <control id="header_hsa_patient" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="hsa_patient" disabled="false" />
+            </cell>
+            <cell id="{f34860e0-3d2e-46e2-991f-81bfb5ad3c5a}" locklevel="0" colspan="1" rowspan="1">
+              <labels>
+                <label description="Location" languagecode="1033" />
+              </labels>
+              <control id="header_hsa_location" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="hsa_location" disabled="false" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{0905712d-6a1b-4234-b3f1-97683ec54be2}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{5cdfc35c-5ccd-4aff-b274-4dd7c97207f3}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{2f5795ee-b6da-4b7d-92df-b11af1306d28}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{983f622b-4ab9-42df-8f7b-143a6060a40c}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <controlDescriptions>
+        <controlDescription forControl="{05312eb7-4c21-4721-8671-71f1e461f081}">
+          <customControl id="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}">
+            <parameters>
+              <datafieldname>hsa_title</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.Canvas.CanvasControl">
+            <parameters>
+              <record>hsa_title</record>
+              <schema type="SingleLine.Text" static="true">{}</schema>
+              <entityName type="SingleLine.Text">hsa_title</entityName>
+              <appName type="SingleLine.Text" static="true">hsa_roundinghistory_ade7d</appName>
+              <appId type="SingleLine.Text" static="true">37cd2063-dc90-43d9-88f4-fde5cdd45392</appId>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.Canvas.CanvasControl">
+            <parameters>
+              <record>hsa_title</record>
+              <schema type="SingleLine.Text" static="true">{}</schema>
+              <entityName type="SingleLine.Text">hsa_title</entityName>
+              <appName type="SingleLine.Text" static="true">hsa_roundinghistory_ade7d</appName>
+              <appId type="SingleLine.Text" static="true">37cd2063-dc90-43d9-88f4-fde5cdd45392</appId>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="MscrmControls.Canvas.CanvasControl">
+            <parameters>
+              <record>hsa_title</record>
+              <schema type="SingleLine.Text" static="true">{}</schema>
+              <entityName type="SingleLine.Text">hsa_title</entityName>
+              <appName type="SingleLine.Text" static="true">hsa_roundinghistory_ade7d</appName>
+              <appId type="SingleLine.Text" static="true">37cd2063-dc90-43d9-88f4-fde5cdd45392</appId>
+            </parameters>
+          </customControl>
+        </controlDescription>
+      </controlDescriptions>
+      <Navigation>
+        <NavBar />
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Rounding Form" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

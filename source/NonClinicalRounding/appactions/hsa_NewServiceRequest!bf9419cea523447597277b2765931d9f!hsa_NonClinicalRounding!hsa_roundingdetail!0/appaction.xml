@@ -1,0 +1,27 @@
+<appaction uniquename="hsa_NewServiceRequest!bf9419cea523447597277b2765931d9f!hsa_NonClinicalRounding!hsa_roundingdetail!0">
+  <appmoduleid>
+    <uniquename>hsa_NonClinicalRounding</uniquename>
+  </appmoduleid>
+  <buttonlabeltext default="New Service Request">
+    <label description="New Service Request" languagecode="1033" />
+  </buttonlabeltext>
+  <buttonsequencepriority>7.7500000000</buttonsequencepriority>
+  <context>1</context>
+  <contextentity>
+    <logicalname>hsa_roundingdetail</logicalname>
+  </contextentity>
+  <contextvalue>hsa_roundingdetail</contextvalue>
+  <hidden>0</hidden>
+  <iscustomizable>1</iscustomizable>
+  <location>0</location>
+  <name>NewServiceRequest!bf9419cea523447597277b2765931d9f</name>
+  <onclickeventjavascriptfunctionname>openRequestFullPageFromItem</onclickeventjavascriptfunctionname>
+  <onclickeventjavascriptparameters>[{"type":4}]</onclickeventjavascriptparameters>
+  <onclickeventjavascriptwebresourceid>
+    <webresourceid>4d4f4559-885e-ec11-8f8f-002248283039</webresourceid>
+  </onclickeventjavascriptwebresourceid>
+  <onclickeventtype>2</onclickeventtype>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <type>0</type>
+</appaction>

@@ -1,0 +1,129 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "hsa_roundingdetails",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "hsa_roundingdetail",
+    "MaxGetRowsCount": 500,
+    "Name": "Rounding Details",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "hsa_alert": "Alert",
+      "hsa_alertdetails": "Alert Details",
+      "hsa_encounter": "Encounter",
+      "hsa_lastcheckin": "Last Check-in",
+      "hsa_location": "Location",
+      "hsa_Patient": "Patient",
+      "hsa_roundingdetail_AsyncOperations": "System Jobs",
+      "hsa_roundingdetail_BulkDeleteFailures": "Bulk Delete Failures",
+      "hsa_roundingdetail_DuplicateBaseRecord": "Duplicate Records (hsa_roundingdetail_DuplicateBaseRecord)",
+      "hsa_roundingdetail_DuplicateMatchingRecord": "Duplicate Records (hsa_roundingdetail_DuplicateMatchingRecord)",
+      "hsa_roundingdetail_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "hsa_roundingdetail_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "hsa_roundingdetail_ProcessSession": "Process Sessions",
+      "hsa_roundingdetail_SyncErrors": "Sync Errors",
+      "hsa_roundingdetailid": "Rounding Detail",
+      "hsa_RoundingSession_RoundingDetail": "Rounding Sessions",
+      "hsa_sentiment": "Sentiment Label",
+      "hsa_sentimentcode": "Sentiment",
+      "hsa_title": "Title",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Rounding Details",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Rounding Details (Views)",
+    "Name": "_hsa_roundingdetail_views",
+    "RelatedEntityName": "Rounding Details",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "3bb857f2-76a3-432b-86d7-21210ee999ce": "Rounding Detail Lookup View",
+      "433ec6f7-4f5f-ec11-8f8f-002248283039": "Alerts",
+      "4a8e91dc-4f5f-ec11-8f8f-002248283039": "Low Sentiment",
+      "736a96f9-3340-4798-815d-bca04209a37d": "Inactive Rounding Details",
+      "92530a17-d939-4a8d-a4c7-8e70be3063eb": "Rounding Detail Advanced Find View",
+      "9c97cca7-cf74-4926-b022-084fa77f7e7b": "Rounding Detail Associated View",
+      "fd7184c7-c925-4d98-ba63-f072a1224bf6": "Rounding List"
+    }
+  },
+  {
+    "DisplayName": "Status (Rounding Details)",
+    "Name": "hsa_roundingdetail_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Rounding Details"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Rounding Details",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Rounding Details)",
+    "Name": "hsa_roundingdetail_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Rounding Details"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Rounding Details",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Sentiment Code",
+    "Name": "hsa_sentimentcode",
+    "OptionSetInfoNameMapping": {
+      "123000000": "\uD83D\uDFE2 Green",
+      "123000001": "\uD83D\uDFE1 Yellow",
+      "123000002": "\uD83D\uDD34 Red"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "hsa_sentimentcode",
+        "OptionSetReferenceEntityName": "Rounding Details"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "hsa_sentimentcode",
+    "RelatedEntityName": "Rounding Details",
+    "Type": "OptionSetInfo"
+  }
+]

@@ -1,0 +1,199 @@
+{
+  "appinfo": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/appinfo",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": false,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": false,
+    "LastModifiedTimestamp": "0",
+    "Name": "appinfo",
+    "OverridableProperties": {},
+    "Version": "1.0"
+  },
+  "gallery": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/gallery",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": false,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": true,
+    "LastModifiedTimestamp": "0",
+    "Name": "gallery",
+    "OverridableProperties": {},
+    "Version": "2.12.0"
+  },
+  "galleryTemplate": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/galleryTemplate",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": false,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": false,
+    "LastModifiedTimestamp": "0",
+    "Name": "galleryTemplate",
+    "OverridableProperties": {},
+    "Version": "1.0"
+  },
+  "groupContainer": {
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/groupContainer",
+    "IsComponentTemplate": false,
+    "IsPcfControl": false,
+    "IsWidgetTemplate": false,
+    "LastModifiedTimestamp": "0",
+    "Name": "groupContainer",
+    "Version": "1.0"
+  },
+  "hostControl": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "HostService": {
+      "Name": "ModelDrivenFormIntegration",
+      "ServiceKind": "HostWadl",
+      "Type": "ServiceInfo",
+      "WadlMetadata": {
+        "WadlXml": "<application xmlns:xml=\"http://www.w3.org/XML/1998/namespace\" xmlns:xs=\"http://www.w3.org/2001/XMLSchema\" xmlns:service=\"https://tip1-shared.azure-apim.net/apim/logicflows\" xmlns:siena=\"http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11\" siena:serviceId=\"Embeddingcanvas\" xmlns=\"http://wadl.dev.java.net/2009/02\">\n        <doc title=\"PowerApps to host form basic WADL communication\" />\n        <resources base=\"http://hostform/\">\n        <resource path=\"/embeddingcanvas/saveForm\">\n        <method siena:requiresAuthentication=\"false\" name=\"POST\" id=\"SaveForm\" siena:isHostFunction=\"true\">\n        <doc title=\"Save the data on the host model-driven form.\" />\n        <request>\n        <param style=\"header\" name=\"Function\" required=\"true\" fixed=\"SaveForm\" />\n        <representation mediaType=\"application/json\" />\n        </request>\n        </method>\n        </resource>\n        <resource path=\"/embeddingcanvas/refreshForm\">\n        <method siena:requiresAuthentication=\"false\" name=\"POST\" id=\"RefreshForm\" siena:isHostFunction=\"true\">\n        <doc title=\"Refresh the host model-driven form.\" />\n        <request>\n        <param style=\"header\" name=\"Function\" required=\"true\" fixed=\"RefreshForm\" />\n        <param style=\"header\" name=\"showPrompt\" required=\"true\" type=\"xs:string\">\n        <doc title=\"Show or hide a confirmation prompt to the user before saving changes.\" />\n        </param>\n        <representation mediaType=\"application/json\" />\n        </request>\n        </method>\n        </resource>\n        <resource path=\"/embeddingcanvas/navigateToMainForm\">\n        <method siena:requiresAuthentication=\"false\" name=\"POST\" id=\"NavigateToMainForm\" siena:isHostFunction=\"true\">\n        <doc title=\"Navigate the host window to a model-driven main form\" />\n        <request>\n        <param style=\"header\" name=\"Function\" required=\"true\" fixed=\"NavigateToMainForm\" />\n        <param style=\"header\" name=\"entityName\" type=\"xs:string\" required=\"true\">\n        <doc title=\"The parent entity of the form\" />\n        </param>\n        <param style=\"header\" name=\"mainFormName\" type=\"xs:string\" required=\"true\">\n        <doc title=\"The name of the main form to display.\" />\n        </param>\n        <param style=\"header\" name=\"recordId\" type=\"xs:string\" required=\"true\">\n        <doc title=\"The ID of the record to display in the form.\" />\n        </param>\n        <representation mediaType=\"application/json\" />\n        </request>\n        </method>\n        </resource>\n        <resource path=\"/embeddingcanvas/openQuickCreateForm\">\n        <method siena:requiresAuthentication=\"false\" name=\"POST\" id=\"OpenQuickCreateForm\" siena:isHostFunction=\"true\">\n        <doc title=\" Opens a quick create form in the host window\" />\n        <request>\n        <param style=\"header\" name=\"Function\" required=\"true\" fixed=\"OpenQuickCreateForm\" />\n        <param style=\"header\" name=\"entityName\" type=\"xs:string\" required=\"true\">\n        <doc title=\"The parent entity of the form.\" />\n        </param>\n        <representation mediaType=\"application/json\" />\n        </request>\n        </method>\n        </resource>\n        <resource path=\"/embeddingcanvas/navigateToView\">\n        <method siena:requiresAuthentication=\"false\" name=\"POST\" id=\"NavigateToView\" siena:isHostFunction=\"true\">\n        <doc title=\"Navigate the host window to a view.\" />\n        <request>\n        <param style=\"header\" name=\"Function\" required=\"true\" fixed=\"NavigateToView\" />\n        <param style=\"header\" name=\"entityName\" type=\"xs:string\" required=\"true\">\n        <doc title=\"The parent entity of the view.\" />\n        </param>\n        <param style=\"header\" name=\"viewName\" type=\"xs:string\" required=\"true\">\n        <doc title=\"The name of the view to display.\" />\n        </param>\n        </request>\n        </method>\n        </resource>\n        </resources>\n        </application>"
+      }
+    },
+    "HostType": "Dynamic",
+    "Id": "http://microsoft.com/appmagic/hostcontrol",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": false,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": false,
+    "LastModifiedTimestamp": "0",
+    "Name": "hostControl",
+    "OverridableProperties": {
+      "Data": {
+        "Type": {
+          "EnumString": "",
+          "Kind": "Table",
+          "Name": "Root",
+          "Type": [
+            {
+              "EnumString": "",
+              "Kind": "String",
+              "Name": "ItemId",
+              "Type": []
+            },
+            {
+              "EnumString": "",
+              "Kind": "DateTime",
+              "Name": "RefreshedOn",
+              "Type": []
+            }
+          ]
+        },
+        "Version": "1.320"
+      }
+    },
+    "PCFDynamicSchemaForIRRetrieval": {},
+    "Version": "1.4.1"
+  },
+  "icon": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/icon",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": false,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": true,
+    "LastModifiedTimestamp": "0",
+    "Name": "icon",
+    "OverridableProperties": {},
+    "Version": "2.4.0"
+  },
+  "label": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/label",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": false,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": true,
+    "LastModifiedTimestamp": "0",
+    "Name": "label",
+    "OverridableProperties": {},
+    "Version": "2.4.0"
+  },
+  "legend": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/legend",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": false,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": true,
+    "LastModifiedTimestamp": "0",
+    "Name": "legend",
+    "OverridableProperties": {},
+    "Version": "2.1.0"
+  },
+  "lineChart": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/lineChart",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": false,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": true,
+    "LastModifiedTimestamp": "0",
+    "Name": "lineChart",
+    "OverridableProperties": {},
+    "Version": "2.2.0"
+  },
+  "rectangle": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/shapes/rectangle",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": false,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": true,
+    "LastModifiedTimestamp": "0",
+    "Name": "rectangle",
+    "OverridableProperties": {},
+    "Version": "2.2.0"
+  },
+  "screen": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/screen",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": false,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": false,
+    "LastModifiedTimestamp": "0",
+    "Name": "screen",
+    "OverridableProperties": {},
+    "Version": "1.0"
+  },
+  "timer": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/timer",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": false,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": true,
+    "LastModifiedTimestamp": "0",
+    "Name": "timer",
+    "OverridableProperties": {},
+    "Version": "2.1.0"
+  }
+}

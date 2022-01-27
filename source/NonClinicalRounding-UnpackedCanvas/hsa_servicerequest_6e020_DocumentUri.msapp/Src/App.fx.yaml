@@ -1,0 +1,9 @@
+App As appinfo:
+    BackEnabled: =false
+    OnStart: |-
+        =Set(RecordItem, 
+            If(IsBlank(Param("recordId")),
+                First('Rounding Details'),
+                LookUp('Rounding Details', 'Rounding Detail' = GUID(Substitute(Substitute(Param("recordId"),"{",""),"}",""))))
+        )
+

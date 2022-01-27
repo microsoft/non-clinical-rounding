@@ -1,0 +1,12 @@
+{
+  "QualifiedValues": [
+    {
+      "Kind": "default.cds_hsa_roundingdetail_forms",
+      "Namespace": "Rounding Details (Forms)",
+      "Values": {
+        "Information": "d6b2bae6-b562-445b-b84e-b9b180cc4a9a",
+        "Rounding Form": "1f9c8213-c754-488c-ab49-46e730b2fa03"
+      }
+    }
+  ]
+}

@@ -1,0 +1,201 @@
+Screen1 As screen:
+    Fill: =RGBA(230, 230, 230, .99)
+    LoadingSpinnerColor: =RGBA(0, 120, 212, 1)
+
+    "'Floor Plan' As image":
+        AutoDisableOnSelect: =false
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        Height: =768
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Image: =BedMapSample
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =374
+        ZIndex: =1
+
+    RoomStatus_3 As RoomStatusComponent:
+        AlertSize: =11
+        AlertText: =Self.RoomRecord.hsa_alert
+        AlignTop: =false
+        Height: =66
+        HoverColor: =RGBA(26, 150, 212, 0.4)
+        OnSelect: |-
+            =Set(selectedRoom,LookUp('Rounding Details',Title=Self.RoomName));
+            Navigate(selectedRoom)
+        RoomName: ="B1/204B"
+        RoomRecord: =LookUp('Rounding Details',Title=Self.RoomName)
+        StatusText: =Self.RoomRecord.hsa_sentiment
+        Width: =77
+        X: =100
+        Y: =338
+        ZIndex: =3
+
+    RoomStatus_4 As RoomStatusComponent:
+        AlertSize: =11
+        AlertText: =Self.RoomRecord.hsa_alert
+        AlignTop: =false
+        Height: =66
+        HoverColor: =RGBA(26, 150, 212, 0.4)
+        OnSelect: |-
+            =Set(selectedRoom,LookUp('Rounding Details',Title=Self.RoomName));
+            Navigate(selectedRoom)
+        RoomName: ="B1/206"
+        RoomRecord: =LookUp('Rounding Details',Title=Self.RoomName)
+        StatusText: =Self.RoomRecord.hsa_sentiment
+        Width: =77
+        X: =100
+        Y: =265
+        ZIndex: =4
+
+    RoomStatus_5 As RoomStatusComponent:
+        AlertSize: =11
+        AlertText: =Self.RoomRecord.hsa_alert
+        AlignTop: =false
+        Height: =66
+        HoverColor: =RGBA(26, 150, 212, 0.4)
+        OnSelect: |-
+            =Set(selectedRoom,LookUp('Rounding Details',Title=Self.RoomName));
+            Navigate(selectedRoom)
+        RoomName: ="B1/208"
+        RoomRecord: =LookUp('Rounding Details',Title=Self.RoomName)
+        StatusText: =Self.RoomRecord.hsa_sentiment
+        Width: =77
+        X: =100
+        Y: =195
+        ZIndex: =5
+
+    RoomStatus_6 As RoomStatusComponent:
+        AlertSize: =11
+        AlertText: =Self.RoomRecord.hsa_alert
+        AlignTop: =false
+        Height: =66
+        HoverColor: =RGBA(26, 150, 212, 0.4)
+        OnSelect: |-
+            =Set(selectedRoom,LookUp('Rounding Details',Title=Self.RoomName));
+            Navigate(selectedRoom)
+        RoomName: ="B1/210"
+        RoomRecord: =LookUp('Rounding Details',Title=Self.RoomName)
+        StatusText: =Self.RoomRecord.hsa_sentiment
+        Width: =77
+        X: =100
+        Y: =124
+        ZIndex: =6
+
+    RoomStatus_7 As RoomStatusComponent:
+        AlertSize: =11
+        AlertText: =Self.RoomRecord.hsa_alert
+        AlignTop: =false
+        Height: =66
+        HoverColor: =RGBA(26, 150, 212, 0.4)
+        OnSelect: |-
+            =Set(selectedRoom,LookUp('Rounding Details',Title=Self.RoomName));
+            Navigate(selectedRoom)
+        RoomName: ="B1/204A"
+        RoomRecord: =LookUp('Rounding Details',Title=Self.RoomName)
+        StatusText: =Self.RoomRecord.hsa_sentiment
+        Width: =77
+        X: =100
+        Y: =410
+        ZIndex: =7
+
+    RoomStatus_8 As RoomStatusComponent:
+        AlertSize: =11
+        AlertText: =Self.RoomRecord.hsa_alert
+        Height: =62
+        HoverColor: =RGBA(26, 150, 212, 0.4)
+        OnSelect: |-
+            =Set(selectedRoom,LookUp('Rounding Details',Title=Self.RoomName));
+            Navigate(selectedRoom)
+        RoomName: ="B1/211B"
+        RoomRecord: =LookUp('Rounding Details',Title=Self.RoomName)
+        StatusText: =Self.RoomRecord.hsa_sentiment
+        Width: =93
+        X: =232
+        Y: =181
+        ZIndex: =8
+
+    RoomStatus_9 As RoomStatusComponent:
+        AlertSize: =11
+        AlertText: =Self.RoomRecord.hsa_alert
+        Height: =62
+        HoverColor: =RGBA(26, 150, 212, 0.4)
+        OnSelect: |-
+            =Set(selectedRoom,LookUp('Rounding Details',Title=Self.RoomName));
+            Navigate(selectedRoom)
+        RoomName: ="B1/211A"
+        RoomRecord: =LookUp('Rounding Details',Title=Self.RoomName)
+        StatusText: =Self.RoomRecord.hsa_sentiment
+        Width: =93
+        X: =232
+        Y: =249
+        ZIndex: =9
+
+    RoomStatus_10 As RoomStatusComponent:
+        AlertSize: =11
+        AlertText: =Self.RoomRecord.hsa_alert
+        Height: =62
+        HoverColor: =RGBA(26, 150, 212, 0.4)
+        OnSelect: |-
+            =Set(selectedRoom,LookUp('Rounding Details',Title=Self.RoomName));
+            Navigate(selectedRoom)
+        RoomName: ="B1/209"
+        RoomRecord: =LookUp('Rounding Details',Title=Self.RoomName)
+        StatusText: =Self.RoomRecord.hsa_sentiment
+        Width: =93
+        X: =232
+        Y: =316
+        ZIndex: =10
+
+    RoomStatus_11 As RoomStatusComponent:
+        AlertSize: =11
+        AlertText: =Self.RoomRecord.hsa_alert
+        Height: =62
+        HoverColor: =RGBA(26, 150, 212, 0.4)
+        OnSelect: |-
+            =Set(selectedRoom,LookUp('Rounding Details',Title=Self.RoomName));
+            Navigate(selectedRoom)
+        RoomName: ="B1/207"
+        RoomRecord: =LookUp('Rounding Details',Title=Self.RoomName)
+        StatusText: =Self.RoomRecord.hsa_sentiment
+        Width: =93
+        X: =232
+        Y: =383
+        ZIndex: =11
+
+    RoomStatus_12 As RoomStatusComponent:
+        AlertSize: =11
+        AlertText: =Self.RoomRecord.hsa_alert
+        Height: =62
+        HoverColor: =RGBA(26, 150, 212, 0.4)
+        OnSelect: |-
+            =Set(selectedRoom,LookUp('Rounding Details',Title=Self.RoomName));
+            Navigate(selectedRoom)
+        RoomName: ="B1/205B"
+        RoomRecord: =LookUp('Rounding Details',Title=Self.RoomName)
+        StatusText: =Self.RoomRecord.hsa_sentiment
+        Width: =93
+        X: =232
+        Y: =451
+        ZIndex: =12
+
+    RoomStatus_13 As RoomStatusComponent:
+        AlertSize: =11
+        AlertText: =Self.RoomRecord.hsa_alert
+        Height: =62
+        HoverColor: =RGBA(26, 150, 212, 0.4)
+        OnSelect: |-
+            =Set(selectedRoom,LookUp('Rounding Details',Title=Self.RoomName));
+            Navigate(selectedRoom)
+        RoomName: ="B1/205A"
+        RoomRecord: =LookUp('Rounding Details',Title=Self.RoomName)
+        StatusText: =Self.RoomRecord.hsa_sentiment
+        Width: =120
+        X: =217
+        Y: =517
+        ZIndex: =13
+

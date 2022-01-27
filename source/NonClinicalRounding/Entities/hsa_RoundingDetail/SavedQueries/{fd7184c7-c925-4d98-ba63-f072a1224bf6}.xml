@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{fd7184c7-c925-4d98-ba63-f072a1224bf6}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="hsa_title" select="1" icon="1" preview="1">
+        <row name="result" id="hsa_roundingdetailid">
+          <cell name="hsa_title" width="234" />
+          <cell name="hsa_sentimentcode" width="86" />
+          <cell name="hsa_alert" width="100" />
+          <cell name="hsa_lastcheckin" width="167" />
+          <cell name="hsa_location" width="148" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="hsa_roundingdetail">
+          <attribute name="hsa_roundingdetailid" />
+          <attribute name="hsa_title" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="hsa_location" />
+          <attribute name="hsa_lastcheckin" />
+          <attribute name="hsa_alert" />
+          <attribute name="hsa_sentimentcode" />
+          <order attribute="hsa_title" descending="false" />
+          <order attribute="hsa_alert" descending="true" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Rounding List" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

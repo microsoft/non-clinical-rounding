@@ -1,0 +1,107 @@
+Screen1 As screen:
+    LoadingSpinnerColor: =RGBA(0, 120, 212, 1)
+
+    "fullDetails As 'Text box'":
+        DisplayMode: =DisplayMode.Edit
+        Height: =187
+        Mode: ='''Microsoft.CoreControls.TextBox.Mode'''.Multiline
+        Value: |-
+            ="Request Type: " & Gallery1.Selected.Value & Char(13) & Char(13) &"Request Link: https://sample.service-now.com/incident.do?sysparm_query=number=INC" & Substitute(Substitute(Substitute(Text(Now()),"/",""),":","")," ","") &  Char(13) & Char(13) & "Details:"& Char(13) & TextBox1.Value
+        Visible: =false
+        Width: =300
+        X: =12
+        Y: =223
+        ZIndex: =1
+
+    Label1 As Label:
+        DisplayMode: =DisplayMode.Edit
+        FontWeight: =FontWeight.Bold
+        Height: =32
+        Text: =RecordItem.Title
+        Width: =300
+        X: =12
+        Y: =12
+        ZIndex: =2
+
+    Label1_1 As Label:
+        DisplayMode: =DisplayMode.Edit
+        FontWeight: =FontWeight.Bold
+        Height: =32
+        Text: |-
+            ="Patient Name: "&RecordItem.Patient.'Full Name'
+        Width: =300
+        X: =12
+        Y: =48
+        ZIndex: =3
+
+    "'Save Button' As Button":
+        DisplayMode: =DisplayMode.Edit
+        Height: =40
+        OnSelect: |-
+            =Patch('Rounding Details',RecordItem,{Alert:"⚠️",'Alert Details':fullDetails.Value});
+            Back()
+        Text: ="Create Request"
+        Width: =300
+        X: =12
+        Y: =435
+        ZIndex: =4
+
+    "TextBox1 As 'Text box'":
+        DisplayMode: =DisplayMode.Edit
+        Height: =188
+        Mode: ='''Microsoft.CoreControls.TextBox.Mode'''.Multiline
+        OnChange: |-
+            =Set(varFullRequestText,"Request Type: "&Gallery1.Selected.Value&"
+            Details:
+            "&TextBox1.Value)
+        Placeholder: ="Enter service request details here"
+        Value: =""
+        Width: =300
+        X: =12
+        Y: =222
+        ZIndex: =5
+
+    Label1_2 As Label:
+        DisplayMode: =DisplayMode.Edit
+        Height: =32
+        Text: |-
+            ="Details:"
+        Width: =300
+        X: =12
+        Y: =178
+        ZIndex: =6
+
+    Gallery1 As gallery.galleryHorizontal:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderColor: =RGBA(0, 120, 212, 1)
+        FocusedBorderThickness: =2
+        Height: =46
+        Items: =["Facilities","Amenities","Other"]
+        TemplateFill: =If(ThisItem.IsSelected,LightBlue,RGBA(0, 0, 0, 0))
+        TemplateSize: =90
+        Width: =300
+        X: =12
+        Y: =122
+        ZIndex: =7
+
+        Label2 As Label:
+            Alignment: =Align.Center
+            DisplayMode: =DisplayMode.Edit
+            Height: =Parent.TemplateHeight
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Value
+            Width: =Parent.TemplateWidth
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+    Label1_3 As Label:
+        DisplayMode: =DisplayMode.Edit
+        Height: =32
+        Text: |-
+            ="Type of request:"
+        Width: =300
+        X: =12
+        Y: =90
+        ZIndex: =8
+

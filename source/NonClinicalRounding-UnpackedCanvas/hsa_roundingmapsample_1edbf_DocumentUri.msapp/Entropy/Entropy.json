@@ -1,0 +1,105 @@
+{
+  "ComponentIndexes": {
+    "RoomStatus_10": 2,
+    "RoomStatus_11": 2,
+    "RoomStatus_12": 2,
+    "RoomStatus_13": 2,
+    "RoomStatus_3": 2,
+    "RoomStatus_4": 2,
+    "RoomStatus_5": 2,
+    "RoomStatus_6": 2,
+    "RoomStatus_7": 2,
+    "RoomStatus_8": 2,
+    "RoomStatus_9": 2,
+    "RoomStatusComponent": 1
+  },
+  "ControlUniqueIds": {
+    "App": 1,
+    "Container2_1": 4,
+    "Floor Plan": 8,
+    "Label1_1": 5,
+    "Rectangle1": 6,
+    "RoomStatus_10": 14,
+    "RoomStatus_11": 16,
+    "RoomStatus_12": 18,
+    "RoomStatus_13": 19,
+    "RoomStatus_3": 15,
+    "RoomStatus_4": 13,
+    "RoomStatus_5": 11,
+    "RoomStatus_6": 9,
+    "RoomStatus_7": 17,
+    "RoomStatus_8": 10,
+    "RoomStatus_9": 12,
+    "RoomStatusComponent": 3,
+    "Screen1": 7
+  },
+  "FunctionParamsInvariantScripts": {},
+  "HeaderLastSavedDateTimeUTC": "01/20/2022 19:46:02",
+  "LocalDatabaseReferencesAsEmpty": false,
+  "LocalResourceFileNames": {
+    "BedMapSample": "c77099dc-27e7-447b-a3b7-b419b5241e3d.png"
+  },
+  "LocalResourceRootPaths": {
+    "BedMapSample": "https://docserverpwaprodwus.blob.core.windows.net/42c6315d-2449-4f70-97e1-559de86c9177-1/resource/Assets0Images0c77099dc-27e7-447b-a3b7-b419b5241e3d.png?sv=2017-04-17&sr=b&sig=rNUYZ2DQcfbQVRFwNNeMnpReYOrO2Cb%2BrcNAowCkJ28%3D&spr=https&se=2022-01-21T19%3A44%3A04Z&sp=r"
+  },
+  "OrderComponentMetadata": {
+    "2648b64e5c51413e8804aa0103560b7c": 0
+  },
+  "OrderComponentTemplate": {
+    "2648b64e5c51413e8804aa0103560b7c": 0
+  },
+  "OrderDataSource": {
+    "localRoundingDetails": 5,
+    "Rounding Details": 4,
+    "Rounding Details\\default.cds_hsa_roundingdetail_views": 3,
+    "Rounding Details\\hsa_roundingdetail_statecode": 1,
+    "Rounding Details\\hsa_roundingdetail_statuscode": 2,
+    "Rounding Details\\hsa_sentimentcode": 0
+  },
+  "OrderGroupControls": {},
+  "OrderTemplate": {},
+  "OrderXMLTemplate": {
+    "groupContainer": 1,
+    "image": 0,
+    "label": 2,
+    "rectangle": 3
+  },
+  "PublishOrderIndices": {
+    "App": 0,
+    "Container2_1": 12,
+    "Floor Plan": 0,
+    "Label1_1": 13,
+    "Rectangle1": 14,
+    "RoomStatus_10": 6,
+    "RoomStatus_11": 8,
+    "RoomStatus_12": 10,
+    "RoomStatus_13": 11,
+    "RoomStatus_3": 7,
+    "RoomStatus_4": 5,
+    "RoomStatus_5": 3,
+    "RoomStatus_6": 1,
+    "RoomStatus_7": 9,
+    "RoomStatus_8": 2,
+    "RoomStatus_9": 4,
+    "RoomStatusComponent": 0,
+    "Screen1": 0
+  },
+  "ResourcesJsonIndices": {
+    "Image-BedMapSample": 1,
+    "Image-SampleImage": 0
+  },
+  "TemplateVersions": {},
+  "VolatileProperties": {
+    "AnalysisLoadTime": 0.23719609999999999,
+    "ControlCount": {
+      "2648b64e5c51413e8804aa0103560b7c": 12,
+      "groupContainer": 1,
+      "image": 1,
+      "label": 1,
+      "rectangle": 1,
+      "screen": 1
+    },
+    "DeserializationLoadTime": 2.3394404999999998,
+    "ErrorCount": 0
+  }
+}

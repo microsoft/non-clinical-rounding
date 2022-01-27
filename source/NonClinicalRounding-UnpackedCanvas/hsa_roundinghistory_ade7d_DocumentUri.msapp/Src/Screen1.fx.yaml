@@ -1,0 +1,138 @@
+Screen1 As screen:
+
+    Legend1 As legend:
+        Height: =72
+        ItemColorSet: =LineChart1.ItemColorSet
+        Items: =LineChart1.SeriesLabels
+        Size: =16
+        Visible: =false
+        Width: =550
+        X: =69
+        ZIndex: =1
+
+    Title1 As label:
+        Align: =Align.Center
+        Font: =Font.'Segoe UI'
+        FontWeight: =Normal
+        Height: =70
+        Size: =16
+        Text: ="Sentiment History"
+        Width: =640
+        ZIndex: =2
+
+    LineChart1 As lineChart:
+        Font: =Font.'Segoe UI'
+        GridStyle: =GridStyle.YOnly
+        Height: =395
+        Items: =SortByColumns(itemSessions,"createdon",Ascending)
+        PaddingBottom: =10
+        Size: =16
+        Width: =640
+        Y: =48
+        YAxisMax: =5.5
+        YAxisMin: =-0.5
+        ZIndex: =3
+
+    "Gallery2_1 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
+        Height: =693
+        Items: =SortByColumns(itemSessions,"createdon",Descending)
+        Layout: =Layout.Vertical
+        ShowNavigation: =true
+        ShowScrollbar: =false
+        TemplatePadding: =0
+        TemplateSize: =115
+        Y: =443
+        ZIndex: =4
+
+        Title5_1 As label:
+            Font: =Font.'Segoe UI'
+            Height: =37
+            OnSelect: =Select(Parent)
+            Size: =14
+            Text: =ThisItem.'Senitment value'
+            VerticalAlign: =VerticalAlign.Top
+            Width: =30
+            X: =76
+            Y: =20
+            ZIndex: =1
+
+        Separator4_1 As rectangle:
+            BorderColor: =RGBA(116, 116, 116, 1)
+            Fill: =RGBA(116, 116, 116, 1)
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight-1
+            ZIndex: =3
+
+        Rectangle2_1 As rectangle:
+            BorderColor: =RGBA(116, 116, 116, 1)
+            Fill: =RGBA(116, 116, 116, 1)
+            Height: =130
+            OnSelect: =Select(Parent)
+            Width: =3
+            X: =36
+            ZIndex: =4
+
+        Label1_1 As label:
+            Height: =70
+            OnSelect: =Select(Parent)
+            Size: =30
+            Text: =If(Value(Title5_1.Text)=1,"🔴",Value(Title5_1.Text)<4,"🟡","🟢")
+            Width: =70
+            X: =6
+            ZIndex: =5
+
+        Label2_2 As label:
+            Font: =Font.'Segoe UI'
+            Height: =37
+            OnSelect: =Select(Parent)
+            Size: =14
+            Text: |-
+                ="Session Date:    "&ThisItem.'Created On'
+            VerticalAlign: =VerticalAlign.Top
+            Width: =518
+            X: =121
+            Y: =20
+            ZIndex: =6
+
+        Label2_3 As label:
+            Font: =Font.'Segoe UI'
+            Height: =37
+            OnSelect: =Select(Parent)
+            Size: =14
+            Text: |-
+                ="Completed by:  "&ThisItem.'Created By'.'Full Name'
+            VerticalAlign: =VerticalAlign.Top
+            Width: =518
+            X: =122
+            Y: =60
+            ZIndex: =7
+
+    Timer1 As timer:
+        AutoPause: =false
+        AutoStart: =true
+        Duration: =500
+        Height: =70
+        OnTimerEnd: |-
+            =Set(varRoundingDetail,[@ModelDrivenFormIntegration].Item);
+            ClearCollect(myresults,SortByColumns(AddColumns(varRoundingDetail.'Rounding Sessions',"Senitment value",Mid(Results,12,1)),"createdon",Descending));
+            ClearCollect(itemSessions,SortByColumns(AddColumns(varRoundingDetail.'Rounding Sessions',"Senitment value",Mid(Results,12,1)),"createdon",Descending))
+        Visible: =false
+        Width: =123
+        X: =517
+        ZIndex: =5
+
+    Icon1 As icon.Add:
+        Color: =RGBA(116, 116, 116, 1)
+        Height: =52
+        Icon: =Icon.Reload
+        PaddingBottom: =10
+        PaddingLeft: =10
+        PaddingRight: =10
+        PaddingTop: =10
+        Width: =52
+        X: =567
+        Y: =10
+        ZIndex: =6
+

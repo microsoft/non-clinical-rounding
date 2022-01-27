@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityRelationships xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntityRelationship Name="business_unit_hsa_roundingdetail" />
+  <EntityRelationship Name="business_unit_hsa_roundingsession" />
+  <EntityRelationship Name="hsa_RoundingDetail_encounter" />
+  <EntityRelationship Name="hsa_RoundingDetail_location_location" />
+  <EntityRelationship Name="hsa_RoundingDetail_Patient_Contact" />
+  <EntityRelationship Name="hsa_RoundingSession_encounter" />
+  <EntityRelationship Name="hsa_RoundingSession_location" />
+  <EntityRelationship Name="hsa_RoundingSession_Patient" />
+  <EntityRelationship Name="hsa_RoundingSession_RoundingDetail" />
+  <EntityRelationship Name="lk_hsa_roundingdetail_createdby" />
+  <EntityRelationship Name="lk_hsa_roundingdetail_modifiedby" />
+  <EntityRelationship Name="lk_hsa_roundingsession_createdby" />
+  <EntityRelationship Name="lk_hsa_roundingsession_modifiedby" />
+  <EntityRelationship Name="owner_hsa_roundingdetail" />
+  <EntityRelationship Name="owner_hsa_roundingsession" />
+  <EntityRelationship Name="team_hsa_roundingdetail" />
+  <EntityRelationship Name="team_hsa_roundingsession" />
+  <EntityRelationship Name="user_hsa_roundingdetail" />
+  <EntityRelationship Name="user_hsa_roundingsession" />
+</EntityRelationships>
